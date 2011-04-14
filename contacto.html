@@ -9,7 +9,7 @@
 
 <div id="tudo">
   <div id="top">
-    <img src="images/logo.png"/>
+    <a href="index.html"><img src="images/logo.png"/></a>
 	<div id="banner">
 		<img src="images/banner.gif" />
 	</div>
@@ -37,30 +37,30 @@
 <div class="form">
 		
 		  <img src="images/imgContacto.gif" width="221" height="120">		  
-<form>
+		<form action="sendmail.php" method="post">
 			<div>
 				<label for="">Nombre de contacto</label>
-				<input type="text" name=""/>
+				<input type="text" name="nombre"/>
 			</div>
 			<div>
 				<label for="">E-mail</label>
-				<input type="text" name=""/>
+				<input type="text" name="email"/>
 			</div>
 			<div>
 				<label for="">Teléfono</label>
 				<div class="legend">
-					<input type="text" name="" class="cod"/>
+					<input type="text" name="cod" class="cod"/>
 					<br />
 					Cód. Area
 				</div>
 				<div class="legend">
-				<input type="text" name="" class="telefono"/>
+				<input type="text" name="telefono" class="telefono"/>
 				<br />
 				Teléfono</div>
 			</div>
 			<div style="clear:both;">
 				<label for="">Mesaje</label>
-				<textarea></textarea>
+				<textarea name="mesaje"></textarea>
 			</div>
 			<div class="button">
 				<button type="submit" value="enviar"><img src="images/btEnviar.gif" /></button>
