@@ -40,7 +40,7 @@
 <?php
 
 
-$to = 'aleatorio.fulminante@gmail.com'; // Para
+$to = 'gandra@gmail.com'; // Para
 $named = 'CDO'; // Nome destinatário
 
 $name = $_REQUEST['nombre']; // Nome remetente
@@ -49,7 +49,7 @@ $cod = $_REQUEST['cod']; // cod. area
 $telefono = $_REQUEST['telefono']; // telefone
 $content = $_REQUEST['mesaje'] ; // Conteúdo da mensagem
 
-$subject = "Assunto"; //Assumto
+$subject = "[cdo.tv] Contacto"; //Assumto
 
 $message = "
 	$name 
@@ -65,7 +65,7 @@ $headers = "From: $from\nContent-Type: text/html; charset=utf-8";
 
 ini_set("SMTP","localhost" );
 ini_set("smtp_port","25" );
-ini_set('sendmail_from', 'user@example.com'); 
+ini_set('sendmail_from', $from); 
 
 try
   {
