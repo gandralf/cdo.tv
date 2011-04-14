@@ -3,12 +3,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>CDO - Canal Deporte Olimpico</title>
-<link href="css.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
 
 -->
-</style></head>
+</style>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
 <body>
 
 <div id="tudo">
@@ -20,10 +22,10 @@
   </div>
   
   <div id="conteudo">
-    <div id="menu"><div align="center"><img src="images/menuprogramacion.png" width="926" height="35" border="0" usemap="#Map" />
+    <div id="menu"><div align="center"><img src="images/menuhome.png" width="926" height="35" border="0" usemap="#Map" />
 <map name="Map" id="Map">
   <area shape="rect" coords="11,5,184,26" href="index.html" target="_self" />
-  <area shape="rect" coords="731,5,904,26" href="multimedia.html" target="_self" />
+  <area shape="rect" coords="731,4,904,25" href="multimedia.html" target="_self" />
   <area shape="rect" coords="516,3,689,24" href="contenido.html" target="_self" />
   <area shape="rect" coords="239,8,412,29" href="programacion.html" target="_self" />
 </map>
@@ -32,19 +34,21 @@
     
       <div id="carrocel"> 
         <div align="center"><br />
-          <img src="images/pr8.png" width="925" height="512" border="0" usemap="#Map2" />
-          <map name="Map2" id="Map2">
-            <area shape="rect" coords="182,3,216,63" href="programacion7.html" target="_self" />
-            <area shape="rect" coords="895,3,937,63" href="programacion.html" target="_self" />
-          </map>
-        </div>
+          <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','926','height','389','src','carrocel','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','carrocel' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="926" height="389">
+            <param name="movie" value="carrocel.swf" />
+            <param name="quality" value="high" />
+            <embed src="carrocel.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="926" height="389"></embed>
+          </object>
+        </noscript></div>
         
         <div id="videos">
           <div align="center"><br />
             <br />
-          </div>
+          <img src="images/videos.png" /></div>
           <div id="federaciones">
-            <div align="center"></div>
+            <div align="center"><img src="images/federaciones.png" /></div>
           </div>
         </div>
       </div>
