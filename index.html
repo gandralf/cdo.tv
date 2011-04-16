@@ -15,10 +15,16 @@
 
 <div id="tudo">
   <div id="top">
-    <img src="images/logo.png"/>
+    <a href="index.html"><img src="images/logo.png"/></a>
 	<div id="banner">
-		<img src="images/banner.gif" />
-	</div>
+	  <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','594','height','90','src','banners','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','banners' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="594" height="90">
+        <param name="movie" value="banners.swf" />
+        <param name="quality" value="high" />
+        <embed src="banners.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="594" height="90"></embed>
+      </object>
+	</noscript></div>
   </div>
   
   <div id="conteudo">
@@ -46,7 +52,7 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
         <div id="videos">
           <div align="center"><br />
             <br />
-          <img src="images/videos.png" /></div>
+          <img src="images/videos.jpg" /></div>
           <div id="federaciones">
             <div align="center"><img src="images/federaciones.png" /></div>
           </div>
