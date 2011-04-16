@@ -24,8 +24,7 @@ img{
 	float:right;
 	margin:23px 0 0 0;
 }
-#menu {
-}
+
 #carrocel {
 }
 #videos {
@@ -172,3 +171,38 @@ img{
 	text-align:right;
 	width:164px;
 }
+
+/*============ Menu ============*/
+
+#menu {
+	width: 926px;
+	height: 35px;
+	margin: 20px 0px 5px 0px;
+}
+.menu-border-left {
+	background: url(images/menu-bar-left.png) 0 0 transparent no-repeat;
+	height: 35px;
+	width: 14px;
+	float: left;
+}
+
+.menu-center {
+	background: url("images/menu-bar-center.png") 0 0 transparent repeat-x;
+	height: 35px;
+	min-width: 898px;
+	float: left;
+}
+
+.menu-border-right {
+	background: url("images/menu-bar-right.png") 0 0 transparent no-repeat;
+	height: 35px;
+	width: 14px;
+	float: left;
+}
+
+.menu-center ul li {
+	display: inline;
+	text-decoration: none;	
+}
+
+/*==============================*/
