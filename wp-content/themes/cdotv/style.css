@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-	background: #000 url(/wp-content/themes/cdotv/images/bgNovo.jpg) repeat-x ;
+	background: #000 url(images/bgNovo.jpg) repeat-x ;
 }
 img{
 	border:none;
@@ -35,7 +35,7 @@ img{
 #conteudo {
 }
 #footer {
-	background-image: url(/wp-content/themes/cdotv/images/bgfooter.png);
+	background-image: url(images/bgfooter.png);
 	background-repeat: repeat-x;
 	height: 215px;
 }
@@ -64,7 +64,7 @@ img{
 	margin:0;
 }
 #footer .content ul li{
-	background: url(/wp-content/themes/cdotv/images/bullet.png) center left no-repeat;
+	background: url(images/bullet.png) center left no-repeat;
 	padding:0 0 0 10px;
 }
 #footer .content ul li a{
@@ -86,9 +86,16 @@ img{
 	margin:22px 0 0 0;
 }
 
-#footer .content .cdo .powered{
-	font: 10px arial;
-    margin: 30px auto 0;
+#footer .content .powered{
+        font: 10px arial;
+	color:#bbb;
+	font-size:10px;
+	text-transform:uppercase;
+	text-align:right;
+	position:absolute;
+	top:190px;
+	margin:0;
+	right:0;
 }
 #footer .content .powered img{
 	margin:3px 0 0 0;
@@ -103,10 +110,9 @@ img{
 	top:190px;
 	margin:0;
 	left:0;
-	
 }
 #contacto{
-	background-image: url(/wp-content/themes/cdotv/images/bgContacto.gif);
+	background-image: url(images/bgContacto.gif);
 	width:926px;
 	height:647px;
 	margin:18px auto 0;
