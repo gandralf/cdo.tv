@@ -94,7 +94,7 @@ img{
 	text-align:right;
 	position:absolute;
 	top:190px;
-	margin:0;
+	margin:-10px 0 0 0;
 	right:0;
 }
 #footer .content .powered img{
