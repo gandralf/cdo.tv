@@ -8,6 +8,10 @@
 
 <body>
 
+
+<?php wp_nav_menu( array('menu' => 'Menu header' )); ?>
+
+
 <div id="tudo">
 	<div id="top">
 		<img src="<?php echo bloginfo('template_url');?>/images/logo.png"/>
