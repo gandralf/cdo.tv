@@ -15,7 +15,7 @@
 			<img src="<?php echo bloginfo('template_url');?>/images/banner.gif" />
 		</div>
 	</div>
-	
+
 	<div id="conteudo">
 		<div id="menu">
 			<div align="center">

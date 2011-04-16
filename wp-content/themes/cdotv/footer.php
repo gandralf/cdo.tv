@@ -21,6 +21,5 @@
         <p class="copyright">c 2010 CDO Todos los derechos reservados</p>
     </div>
 </div>
-<script src="<?php bloginfo( 'template_url' ); ?>/js/AC_RunActiveContent.js" type="text/javascript"></script>
 </body>
 </html>
