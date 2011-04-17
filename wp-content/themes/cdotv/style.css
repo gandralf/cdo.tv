@@ -55,6 +55,10 @@ img{
         margin: 0 15px 10px 0;
         float: left;
 }
+#news .new_content span img{
+        width: 100px;
+        height: 120px;
+}
 #news .new_content h3{
         margin: 0;
         display: inline-block;
