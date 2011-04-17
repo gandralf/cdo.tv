@@ -11,6 +11,7 @@
     </div>
 </div>
 <script src="<?php echo bloginfo('template_url');?>/js/jquery.min.1.5.2.js" type="text/javascript"></script>
+<script src="<?php echo bloginfo('template_url');?>/js/fuctions.js" type="text/javascript"></script>
 <script type="text/javascript">
 	<?php $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>
 	var urlBar = "<?php echo $url?>";

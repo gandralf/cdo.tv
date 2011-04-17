@@ -1,5 +1,18 @@
 <div id="carrocel"> 
-	<div align="center"><br />
+        <div align="center">
+                <div id="carousel_here">
+                        <div class="window">
+                            <h2>Titulo destaque</h2>
+                            <h6>Descricao destaque e mais um pouco...</h6>
+                        </div>
+                        <ul>
+                                <li>IMG 1</li>
+                                <li>IMG 2</li>
+                                <li>IMG 3</li>
+                                <li>IMG 4</li>
+                        </ul>
+                </div>
+                <br />
 		<script src="<?php bloginfo( 'template_url' ); ?>/js/AC_RunActiveContent.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','926','height','389','src','<?php echo bloginfo('template_url');?>/carrocel','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','<?php echo bloginfo('template_url');?>/carrocel' ); //end AC code

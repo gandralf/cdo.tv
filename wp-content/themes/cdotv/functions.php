@@ -89,6 +89,11 @@ if(function_exists('add_theme_support')){
         set_post_thumbnail_size(100,120);
         if (class_exists('MultiPostThumbnails')) {
                 new MultiPostThumbnails(array(
+                        'label' => 'Second Featured Image (190x180)',
+                        'id' => 'second-featured-image',
+                        'post_type' => 'contenido'
+                ));
+                new MultiPostThumbnails(array(
                         'label' => 'Headline Image (930x400)',
                         'id' => 'headline-image',
                         'post_type' => 'contenido'
@@ -98,6 +103,7 @@ if(function_exists('add_theme_support')){
                         'id' => 'thumbnail-headline-image',
                         'post_type' => 'contenido'
                 ));
+                add_image_size('post-second-featured-image-thumbnail', 190, 180);
                 add_image_size('post-headline-image-thumbnail', 930, 400);
                 add_image_size('post-thumbnail-headlihe-image-thumbnail', 200, 90);
         }

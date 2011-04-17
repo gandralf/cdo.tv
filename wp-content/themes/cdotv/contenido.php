@@ -4,7 +4,7 @@
  */
 get_header();
 ?>
-<div id="videos">
+<div id="videos_content">
     <div id="news">
         <?php
         $args = array('post_type' => 'contenido',
