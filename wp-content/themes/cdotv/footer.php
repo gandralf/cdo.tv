@@ -12,8 +12,10 @@
 </div>
 <script src="<?php echo bloginfo('template_url');?>/js/jquery.min.1.5.2.js" type="text/javascript"></script>
 <script type="text/javascript">
-	<?php $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>
-	var urlBar = "<?php echo $url?>";
+
+//====================|| Genrator img buttons Menu ||=====================================
+	var urlFull = '<?php echo bloginfo('template_url');?>';
+	var urlBar = '<?php echo $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>';
 	var delimiter = "/";
 	var bar = "";
 	
@@ -24,7 +26,16 @@
 	}
 	
 	$('.menu-center ul#menu-menu-header li').each(function(i, v){
-		var linkUrl = $(v).find('a').attr('href');
+		var link = $(v).find('a');
+		var linkUrl = link.attr('href');
+		var nameImg = linkUrl.split('/');
+		link.text('');
+		
+		if (nameImg[3] == '') {
+			link.append('<img src="' + urlFull + '/images/menu-item-home.png" />');
+		} else {
+			link.append('<img src="' + urlFull + '/images/menu-item-' + nameImg[3] + '.png" />');
+		}
 		
 		if (bar == 1) {
 			var newLink = linkUrl.split("//");
@@ -37,6 +48,7 @@
 			}
 		}
 	});
+//========================================================================================
 </script>
 </body>
 </html>
