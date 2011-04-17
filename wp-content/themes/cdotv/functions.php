@@ -79,11 +79,11 @@ function create_post_type_contenido(){
                 '_builtin' => false,
                 'capability_type' => 'post',
                 'hierarchical' => false,
-                #'rewrite' => array('slug' => 'intern'),
-                'supports' => array('title', 'editor', 'thumbnail')
+                'supports' => array('title', 'excerpt', 'editor', 'thumbnail')
         ));
 }
 add_action('init', 'create_post_type_contenido');
 if(function_exists('add_theme_support')){ 
         add_theme_support('post-thumbnails'); 
+        set_post_thumbnail_size(100,120);
 }

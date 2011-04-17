@@ -10,18 +10,19 @@ get_header();
         $args = array('post_type' => 'contenido',
             'post_status' => 'publish',
             'orderby' => 'DESC',
-            'posts_per_page' => 25,
-            'paged' => $paged,
-            'caller_get_posts' => 1);
+            #'posts_per_page' => 1,
+            #'paged' => $paged
+            );
         $wp_query = new WP_Query($args);
         if(have_posts()): while(have_posts()): the_post();
-            $thumb = get_the_post_thumbnail(get_bloginfo('id'), 'thumbnail');
-            the_title('<a href="'.get_permalink().'" title="'.the_title_attribute('echo=0').'" class="new_content"><span>'.$thumb.'</span><h3>','</h3><h6>description</h6></a>');
+            echo '<a href="'.get_permalink().'" title="'.the_title_attribute('echo=0').'" class="new_content">';
+            echo '<span>'.get_the_post_thumbnail($post->ID).'</span>';
+            the_title('<h3>','</h3>');
+            echo '<h6>'.get_the_excerpt().'</h6></a>';
         endwhile; endif;
-        wp_pagenavi();
+        #wp_pagenavi(array('query' => $wp_query));
         wp_reset_query();
         ?>
-        <br/>
     </div>
     <div id="federaciones">
         <div align="center"></div>
