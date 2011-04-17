@@ -69,3 +69,21 @@ function cdotv_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'cdotv_widgets_init' );
+
+function create_post_type_contenido(){
+        register_post_type('contenido', array(
+                'label' => 'Contenidos',
+                'singular_label' =>'Contenido',
+                'public' => true,
+                'show_ui' => true,
+                '_builtin' => false,
+                'capability_type' => 'post',
+                'hierarchical' => false,
+                #'rewrite' => array('slug' => 'intern'),
+                'supports' => array('title', 'editor', 'thumbnail')
+        ));
+}
+add_action('init', 'create_post_type_contenido');
+if(function_exists('add_theme_support')){ 
+        add_theme_support('post-thumbnails'); 
+}
