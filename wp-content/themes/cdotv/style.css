@@ -311,12 +311,16 @@ img{
 	color: #ffffff;
 }
 
+.menu-center ul li a img {
+	margin-top: 7px;
+}
+
 span.menu-button-decoration {
 	background-image: url("images/menu-button-decoration.png") !important;
     background-position: 0px 0px;
     background-repeat: no-repeat;
     height: 14px;
-    margin: 7px 0 0 -23px;
+    margin: 9px 0 0 -23px;
     position: absolute;
     width: 11px;
 }
