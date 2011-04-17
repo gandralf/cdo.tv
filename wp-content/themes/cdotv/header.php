@@ -9,7 +9,7 @@
 <body>
 
 
-<?php wp_nav_menu( array('menu' => 'Menu header' )); ?>
+
 
 
 <div id="tudo">
@@ -19,17 +19,15 @@
 			<img src="<?php echo bloginfo('template_url');?>/images/banner.gif" />
 		</div>
 	</div>
-
+ 
 	<div id="conteudo">
-		<div id="menu">
-			<div align="center">
-				<img src="<?php echo bloginfo('template_url');?>/images/menuhome.png" width="926" height="35" border="0" usemap="#Map" />
-					<map name="Map" id="Map">
-					<area shape="rect" coords="11,5,184,26" href="index.html" target="_self" />
-					<area shape="rect" coords="731,4,904,25" href="multimedia.html" target="_self" />
-					<area shape="rect" coords="516,3,689,24" href="contenido.html" target="_self" />
-					<area shape="rect" coords="239,8,412,29" href="programacion.html" target="_self" />
-					</map>
+		<center>
+			<div id="menu">
+				<div class="menu-border-left"></div>
+				<div class="menu-center">
+					<?php wp_nav_menu( array('menu' => 'Menu header'));?>
+				</div>
+				<div class="menu-border-right"></div>
 			</div>
-		</div>
+		</center>
 	</div>
