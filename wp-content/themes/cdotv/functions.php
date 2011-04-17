@@ -87,4 +87,18 @@ add_action('init', 'create_post_type_contenido');
 if(function_exists('add_theme_support')){ 
         add_theme_support('post-thumbnails'); 
         set_post_thumbnail_size(100,120);
+        if (class_exists('MultiPostThumbnails')) {
+                new MultiPostThumbnails(array(
+                        'label' => 'Headline Image (930x400)',
+                        'id' => 'headline-image',
+                        'post_type' => 'contenido'
+                ));
+                new MultiPostThumbnails(array(
+                        'label' => 'Thumbnail Headline Image (200x90)',
+                        'id' => 'thumbnail-headline-image',
+                        'post_type' => 'contenido'
+                ));
+                add_image_size('post-headline-image-thumbnail', 930, 400);
+                add_image_size('post-thumbnail-headlihe-image-thumbnail', 200, 90);
+        }
 }

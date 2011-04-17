@@ -20,7 +20,7 @@ get_header();
             the_title('<h3>','</h3>');
             echo '<h6>'.get_the_excerpt().'</h6></a>';
         endwhile; endif;
-        #wp_pagenavi(array('query' => $wp_query));
+        #wp_pagenavi();
         wp_reset_query();
         ?>
     </div>
