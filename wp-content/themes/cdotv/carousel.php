@@ -5,19 +5,19 @@
                             <h2>Titulo destaque</h2>
                             <h6>Descricao destaque e mais um pouco...</h6>
                         </div>
-                        <div style="clear:both;"></div>
+                        <div class="clear"></div>
                         <ul class="thumbs">
                                 <li>
                                         <a href="#"><img src="/wp-content/uploads/2011/04/liguagem-php-d7f121-e1303075382594.jpg" alt="IMG 1"/></a>
                                 </li>
                                 <li>
-                                        <a href="#">IMG 1</a>
+                                        <a href="#"><img src="/wp-content/uploads/2011/04/liguagem-php-d7f121-e1303075382594.jpg" alt="IMG 1"/></a>
                                 </li>
                                 <li>
-                                        <a href="#">IMG 1</a>
+                                        <a href="#"><img src="/wp-content/uploads/2011/04/liguagem-php-d7f121-e1303075382594.jpg" alt="IMG 1"/></a>
                                 </li>
                                 <li>
-                                        <a href="#">IMG 1</a>
+                                        <a href="#"><img src="/wp-content/uploads/2011/04/liguagem-php-d7f121-e1303075382594.jpg" alt="IMG 1"/></a>
                                 </li>
                         </ul>
                 </div>
