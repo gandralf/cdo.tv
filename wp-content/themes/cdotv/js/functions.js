@@ -52,4 +52,16 @@ $(function(){
             thumb: '/wp-content/uploads/2011/04/liguagem-php-d7f121-e1303075382594.jpg',
             url: 'http://www.xuxa.com.br'}]]
     });
+    
+    $.fn.underlineText = function(clazz) {
+    	this.bind('mouseenter mouseleave', function() {
+    		if ($(this).hasClass(clazz)) {
+    			$(this).removeClass(clazz);
+    		} else {
+    			$(this).addClass(clazz);
+    		}
+    	});
+    }
+    
+    $('.highlight-list-home li a p').underlineText('textUnderline');
 });

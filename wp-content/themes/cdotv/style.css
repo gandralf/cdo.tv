@@ -352,3 +352,62 @@ span.menu-button-decoration {
     width: 11px;
 }
 /*==============================*/
+
+
+/*============ Highlight ============*/
+
+.highlight-list-home {
+	height: 290px;
+	width: 926px;
+	margin: 0;
+	padding: 0;
+	margin: 20px 0 5px;
+}
+
+.highlight-list-home li {
+	display: block;
+	margin: 0px 0px 0px 0px;
+	background-repeat: repeat-x;
+	height: 290px;
+	width: 308px;
+	float: left;
+}
+
+.highlight-list-home li img {
+	margin-top: 10px;
+}
+
+.highlight-list-home li h3 {
+    color: #FFFFFF;
+    float: left;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 8px 0px 0px 12px;
+    text-align: left;
+    width: 282px;
+}
+
+.highlight-list-home li p {
+    color: #FFFFFF;
+    float: left;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 5px 0px 0px 12px;
+    text-align: left;
+    width: 282px;
+    height: 40px;
+}
+
+.textUnderline {
+	text-decoration: underline;	
+}
+
+.highlight-list-item-off-home {
+	background-image: url("images/backgound-highlight-off.png");
+}
+
+.highlight-list-item-on-home {
+	background-image: url("images/backgound-highlight-on.png");
+}
