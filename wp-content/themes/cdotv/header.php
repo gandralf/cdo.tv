@@ -9,9 +9,6 @@
 <body>
 
 
-
-
-
 <div id="tudo">
 	<div id="top">
 		<img src="<?php echo bloginfo('template_url');?>/images/logo.png"/>
