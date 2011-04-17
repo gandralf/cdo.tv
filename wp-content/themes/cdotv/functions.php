@@ -79,7 +79,8 @@ function create_post_type_contenido(){
                 '_builtin' => false,
                 'capability_type' => 'post',
                 'hierarchical' => false,
-                'supports' => array('title', 'excerpt', 'editor', 'thumbnail')
+                'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
+                'taxonomies' => array('category'),
         ));
 }
 add_action('init', 'create_post_type_contenido');
