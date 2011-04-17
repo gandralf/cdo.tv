@@ -11,7 +11,7 @@
     </div>
 </div>
 <script src="<?php echo bloginfo('template_url');?>/js/jquery.min.1.5.2.js" type="text/javascript"></script>
-<script src="<?php echo bloginfo('template_url');?>/js/fuctions.js" type="text/javascript"></script>
+<script src="<?php echo bloginfo('template_url');?>/js/functions.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 //====================|| Genrator img buttons Menu ||=====================================
