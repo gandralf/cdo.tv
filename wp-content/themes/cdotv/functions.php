@@ -79,7 +79,7 @@ function create_post_type_contenido(){
                 '_builtin' => false,
                 'capability_type' => 'post',
                 'hierarchical' => false,
-                'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
+                'supports' => array('title', 'excerpt', 'editor', 'thumbnail', 'custom-fields'),
                 'taxonomies' => array('category'),
         ));
 }
