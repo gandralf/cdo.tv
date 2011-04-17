@@ -29,11 +29,11 @@
 		if (bar == 1) {
 			var newLink = linkUrl.split("//");
 			if (newLink[1] == urlBar) {
-				$(v).addClass('teste');
+				$(v).prepend('<span class="menu-button-decoration">&nbsp;&nbsp;</span>');
 			}
 		} else {
 			if (linkUrl.indexOf(urlBar) != -1) {
-				$(v).addClass('teste');
+				$(v).prepend('<span class="menu-button-decoration">&nbsp;&nbsp;</span>');
 			}
 		}
 	});
