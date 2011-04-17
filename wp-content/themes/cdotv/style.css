@@ -200,9 +200,54 @@ img{
 	float: left;
 }
 
-.menu-center ul li {
-	display: inline;
-	text-decoration: none;	
+#menu-menu-header {
+	margin: 0;
+	padding: 0;	
 }
+
+/*
+.menu-center ul li {
+	display: inline-block;
+	width: 190px;
+	float: left;
+	margin: 3px 0px 0px 25px;
+}
+
+.menu-center ul li.float-right a{
+	float: right !important;
+}
+
+.menu-center ul li.float-left a{
+	float: left !important;
+}
+
+.menu-center ul li.float-none a{
+	float: none !important;
+}
+
+.menu-center ul li a {
+	text-decoration: none;
+	font-family: Verdana, arial;
+	font-size: 20px;
+	color: #ffffff;
+	float: left;
+}
+*/
+.menu-center ul {
+	height: 35px;	
+}
+
+.menu-center ul li {
+	display: inline-block;
+	margin: 0 50px 0 50px;
+}
+
+.menu-center ul li a {
+	text-decoration: none;
+	font-family: Verdana, arial;
+	font-size: 20px;
+	color: #ffffff;
+}
+
 
 /*==============================*/

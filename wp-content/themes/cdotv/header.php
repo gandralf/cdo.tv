@@ -19,26 +19,13 @@
 			<img src="<?php echo bloginfo('template_url');?>/images/banner.gif" />
 		</div>
 	</div>
-<!-- 
-	<div id="conteudo">
-		<div id="menu">
-			<div align="center">
-				<div class="menu-border-left"></div><div class="menu-center"><?php 
-				
-					wp_nav_menu( array('menu' => 'Menu header' ));
-					
-				?></div><div class="menu-border-right"></div>
-			</div>
-		</div>
-	</div>
- -->
  
 	<div id="conteudo">
 		<center>
 			<div id="menu">
 				<div class="menu-border-left"></div>
 				<div class="menu-center">
-					<?php wp_nav_menu( array('menu' => 'Menu header' ));?>
+					<?php wp_nav_menu( array('menu' => 'Menu header'));?>
 				</div>
 				<div class="menu-border-right"></div>
 			</div>
