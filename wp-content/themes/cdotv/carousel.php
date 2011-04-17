@@ -5,11 +5,20 @@
                             <h2>Titulo destaque</h2>
                             <h6>Descricao destaque e mais um pouco...</h6>
                         </div>
-                        <ul>
-                                <li>IMG 1</li>
-                                <li>IMG 2</li>
-                                <li>IMG 3</li>
-                                <li>IMG 4</li>
+                        <div style="clear:both;"></div>
+                        <ul class="thumbs">
+                                <li>
+                                        <a href="#"><img src="/wp-content/uploads/2011/04/liguagem-php-d7f121-e1303075382594.jpg" alt="IMG 1"/></a>
+                                </li>
+                                <li>
+                                        <a href="#">IMG 1</a>
+                                </li>
+                                <li>
+                                        <a href="#">IMG 1</a>
+                                </li>
+                                <li>
+                                        <a href="#">IMG 1</a>
+                                </li>
                         </ul>
                 </div>
                 <br />
