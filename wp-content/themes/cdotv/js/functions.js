@@ -13,13 +13,16 @@ $(function(){
             html += '<div class="img"></div><div class="window"><h2></h2><h6></h6></div>';
             html += '<div class="clear"></div><ul class="thumbs">';
             for(var i = 0; i < data_length;i++){
-                html += '<li rel="'+i+'"><a href="#">'+data[i][0].thumb+'</a></li>';
+                html += '<li rel="'+i+'"><a href="'+data[i][0].url+'">'+data[i][0].thumb+'</a></li>';
             }
             elem.html(html);
         }
         function setCarousel(data_carousel){
             if(fade) elem.animate({opacity:0.5}, 150);
-            if(data_carousel.img) elem.find('.img').html(data_carousel.img);
+            if(data_carousel.img){
+                elem.find('.img').html(data_carousel.img);
+                elem.find('.img img').attr('title', data_carousel.title);
+            }
             else elem.find('.img').html('');
             elem.find('.window h2').html(data_carousel.title);
             elem.find('.window h6').html(data_carousel.description);
@@ -47,6 +50,11 @@ $(function(){
                 changeCarousel();
                 clearInterval(interval);
                 interval = setInterval(changeCarousel, time);
+            });
+            elem.find('.img').live('click', function(e){
+                e.stopPropagation();
+                e.preventDefault();
+                window.location.href = elem.find('.actual').parents('a').attr('href');
             });
             if(data_length > 1) interval = setInterval(changeCarousel, time);
         }

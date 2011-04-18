@@ -103,6 +103,12 @@ if(function_exists('add_theme_support')){
                         'id' => 'thumbnail-headline-image',
                         'post_type' => 'contenido'
                 ));
+                new MultiPostThumbnails(array(
+                        'label' => 'Banner Image (690x90)',
+                        'id' => 'banner-image',
+                        'post_type' => 'banner'
+                ));
+                add_image_size('post-banner-image-thumbnail', 690, 180);
                 add_image_size('post-second-featured-image-thumbnail', 290, 180);
                 add_image_size('post-headline-image-thumbnail', 930, 400);
                 add_image_size('post-thumbnail-headlihe-image-thumbnail', 200, 90);
@@ -117,3 +123,25 @@ function splitText($text, $limit) {
 	}
 	return $text;
 }
+
+function validateUrl($url = ''){
+    if(!preg_match('/(http)/i', $url)){
+        return 'http://'.$url;
+    }
+    return $url;
+}
+
+function create_post_type_banner(){
+        register_post_type('banner', array(
+                'label' => 'Banners',
+                'singular_label' =>'Banner',
+                'public' => true,
+                'show_ui' => true,
+                '_builtin' => false,
+                'permalink' => false,
+                'capability_type' => 'post',
+                'hierarchical' => false,
+                'supports' => array('title', 'thumbnail'),
+        ));
+}
+add_action('init', 'create_post_type_banner');

@@ -26,6 +26,10 @@ img{
 	float:right;
 	margin:23px 0 0 0;
 }
+#top #banner img{
+        width: 690px;
+        height: 90px;
+}
 
 #carrocel {
 }
@@ -36,6 +40,7 @@ img{
 #carousel_here .img{
         position: absolute;
         z-index: -10px;
+        cursor: pointer;
 }
 #carousel_here .img img{
         width: 930px;
