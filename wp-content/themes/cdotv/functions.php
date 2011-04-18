@@ -112,8 +112,8 @@ if(function_exists('add_theme_support')){
 function splitText($text, $limit) {
 	$count = strlen($text);
 	if ($count >= $limit) {
-		$text = substr($text, 0, $limit);
-		$text = $text . ' ...';
+		$text = trim(substr($text, 0, $limit));
+		$text = $text . '...';
 	}
 	return $text;
 }
