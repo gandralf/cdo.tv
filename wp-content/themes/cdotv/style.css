@@ -2,7 +2,7 @@
 *{outline: none !important;}
 body {
 	background: #000 url(images/bgNovo.jpg) repeat-x ;
-        font-family: Verdana;
+        font-family: Arial;
 }
 img{
 	border:none;
@@ -26,19 +26,33 @@ img{
 	float:right;
 	margin:23px 0 0 0;
 }
+#top #banner img{
+        width: 690px;
+        height: 90px;
+}
 
 #carrocel {
 }
 #carousel_here{
         width: 930px;
         height: 400px;
-        background: url(/wp-content/uploads/2011/04/liguagem-php-d7f12-e1303074110334.jpg) no-repeat top left;
+}
+#carousel_here .img{
+        position: absolute;
+        z-index: -10px;
+        cursor: pointer;
+}
+#carousel_here .img img{
+        width: 930px;
+        height: 400px;
 }
 #carousel_here .window{
         background: url(images/background_window_headline.png) repeat top left transparent;
         float: left;
         padding: 10px 20px;
         margin: 50px 0 0 30px;
+        z-index: 10px;
+        position: absolute;
 }
 #carousel_here .clear{
         float: right;
@@ -48,6 +62,16 @@ img{
 #carousel_here .window h2,
 #carousel_here .window h6{
         color: #FFFFFF;
+        text-align: left;
+}
+#carousel_here .window h2{
+        font-size: 24px;
+        margin: 5px;
+}
+#carousel_here .window h6{
+        font-size: 14px;
+        font-weight: normal;
+        margin: 10px;
 }
 #carousel_here .thumbs{
         width: 100%;
@@ -62,6 +86,10 @@ img{
         float: left;
         margin-left: 25px;
         position: relative;
+        width: 200px;
+        height: 90px;
+        background-color: #000000;
+        cursor: pointer;
 }
 #carousel_here .thumbs .actual{
         background: url(images/hover_headline_thumb.png) repeat top left transparent;
@@ -114,6 +142,8 @@ img{
         color: #CE3132;
         width: 228px;
         float: right;
+        font-weight: normal;
+        font-size: 16px;
 }
 #news .new_content h6{
         margin: 0;
@@ -121,6 +151,8 @@ img{
         color: #FFFFFF;
         float: left;
         width: 228px;
+        font-weight: normal;
+        font-size: 14px;
 }
 #federaciones {
 }

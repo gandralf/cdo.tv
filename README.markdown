@@ -21,3 +21,5 @@ A principio, el proyecto tiene las siguientes releases:
    * Tienda CDO (artículos deportivos, regalos…)
 
 Mais informações no [basecamp do projeto](https://gonow2.basecamphq.com/projects/6954393)
+
+*PS:* ao fazer um push, o ambiente dev.cdo.tv é atualizado.
