@@ -84,6 +84,22 @@ function create_post_type_contenido(){
         ));
 }
 add_action('init', 'create_post_type_contenido');
+
+function create_post_type_federaciones(){
+        register_post_type('federaciones', array(
+                'label' => 'Federaciones',
+                'singular_label' =>'Federaciones',
+                'public' => true,
+                'show_ui' => true,
+                '_builtin' => false,
+                'capability_type' => 'post',
+                'hierarchical' => false,
+                'supports' => array('title', 'editor', 'custom-fields'),
+                'taxonomies' => array('category'),
+        ));
+}
+add_action('init', 'create_post_type_federaciones');
+
 if(function_exists('add_theme_support')){ 
         add_theme_support('post-thumbnails'); 
         set_post_thumbnail_size(100,120);
@@ -103,9 +119,15 @@ if(function_exists('add_theme_support')){
                         'id' => 'thumbnail-headline-image',
                         'post_type' => 'contenido'
                 ));
+                new MultiPostThumbnails(array(
+                        'label' => 'Thumbnail Federaciones (100x75)',
+                        'id' => 'thumbnail-federaciones-image',
+                        'post_type' => 'federaciones'
+                ));
                 add_image_size('post-second-featured-image-thumbnail', 290, 180);
                 add_image_size('post-headline-image-thumbnail', 930, 400);
                 add_image_size('post-thumbnail-headlihe-image-thumbnail', 200, 90);
+                add_image_size('post-thumbnail-federaciones-image', 75, 100);
         }
 }
 

@@ -420,3 +420,36 @@ span.menu-button-decoration {
 .highlight-list-item-on-home {
 	background-image: url("images/backgound-highlight-on.png");
 }
+
+/*==================|| Federaciones ||====================*/
+.label-federaciones {
+	color: #ffffff;
+	margin: 0px 0px -50px 80px;
+	padding-top: 5px;
+	width: 200px;
+	height: 30px;
+	position: absolute;
+}
+
+.panel-thumbnail-federaciones {
+	background-image: url("images/background-federaciones.png");
+	background-repeat: repeat-x;
+	margin: 0;
+	padding: 0;
+	height: 160px;
+	width: 926px;
+}
+
+.panel-thumbnail-federaciones li {
+	list-style: none;
+	display: block;
+	margin: 38px 0 0 0;
+	height: 115px;
+	width: 78px;
+	padding: 0px;
+	float: left;
+}
+
+.panel-thumbnail-federaciones li img{
+	margin-top: 0px;
+}

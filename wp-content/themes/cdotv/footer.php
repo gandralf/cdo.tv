@@ -9,6 +9,7 @@
             Powered by <br/><a href="http://www.gonow.com.br" target='_blank'><img src="<?php echo bloginfo('template_url');?>/images/logoGonow.gif" /></a></p>
         <p class="copyright">c 2010 CDO Todos los derechos reservados</p>
     </div>
+    
 </div>
 <script src="<?php echo bloginfo('template_url');?>/js/jquery.min.1.5.2.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url');?>/js/functions.js" type="text/javascript"></script>

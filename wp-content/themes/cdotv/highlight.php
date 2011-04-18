@@ -51,9 +51,7 @@
         ?>
 		
 	</div>
-	<div id="federaciones">
-		<div align="center">
-			<img src="<?php echo bloginfo("template_url");?>/images/federaciones.png" />
-		</div>
-	</div>
+	
+	<?php include (TEMPLATEPATH . '/federaciones.php') ; ?>
+	
 </div>
