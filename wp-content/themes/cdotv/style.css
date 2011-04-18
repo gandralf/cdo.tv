@@ -369,12 +369,16 @@ img{
 	color: #ffffff;
 }
 
+.menu-center ul li a img{
+	margin-top: 7px;
+}
+
 span.menu-button-decoration {
 	background-image: url("images/menu-button-decoration.png") !important;
     background-position: 0px 0px;
     background-repeat: no-repeat;
     height: 14px;
-    margin: 7px 0 0 -23px;
+    margin: 10px 0 0 -23px;
     position: absolute;
     width: 11px;
 }
@@ -404,6 +408,11 @@ span.menu-button-decoration {
 	margin-top: 10px;
 }
 
+.highlight-list-home li img.icone-video {
+    margin: 158px 0 0 -77px !important;
+    position: absolute;
+}
+
 .highlight-list-home li h3 {
     color: #FFFFFF;
     float: left;
@@ -412,14 +421,14 @@ span.menu-button-decoration {
     font-weight: lighter;
     margin: 8px 0px 0px 12px;
     text-align: left;
-    width: 282px;
+    width: 205px;
 }
 
 .highlight-list-home li p {
     color: #FFFFFF;
     float: left;
     font-family: Arial;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: lighter;
     margin: 5px 0px 0px 12px;
     text-align: left;
