@@ -22,4 +22,4 @@ A principio, el proyecto tiene las siguientes releases:
 
 Mais informações no [basecamp do projeto](https://gonow2.basecamphq.com/projects/6954393)
 
-*PS:* ao fazer um push, o ambiente dev.cdo.tv é atualizado.
+*PS:* ao fazer um push, o ambiente dev.cdo.tv é atualizado (git pull), mas as atualizações de banco de dados devem ser feitas na mão
