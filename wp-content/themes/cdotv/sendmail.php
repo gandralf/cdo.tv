@@ -40,7 +40,7 @@
 <?php
 
 
-$to = 'gandra@gmail.com'; // Para
+$to = 'contacto@cdo.tv'; // Para
 $named = 'CDO'; // Nome destinatário
 
 $name = $_REQUEST['nombre']; // Nome remetente
