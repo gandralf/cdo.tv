@@ -100,6 +100,22 @@ function create_post_type_federaciones(){
 }
 add_action('init', 'create_post_type_federaciones');
 
+function create_post_type_banner(){
+        register_post_type('banner', array(
+                'label' => 'Banners',
+                'singular_label' =>'Banner',
+                'public' => true,
+                'show_ui' => true,
+                '_builtin' => false,
+                'permalink' => false,
+                'capability_type' => 'post',
+                'hierarchical' => false,
+                'supports' => array('title', 'thumbnail'),
+        ));
+}
+add_action('init', 'create_post_type_banner');
+
+
 if(function_exists('add_theme_support')){ 
         add_theme_support('post-thumbnails'); 
         set_post_thumbnail_size(100,120);
@@ -120,18 +136,16 @@ if(function_exists('add_theme_support')){
                         'post_type' => 'contenido'
                 ));
                 new MultiPostThumbnails(array(
-<<<<<<< HEAD
                         'label' => 'Thumbnail Federaciones (100x75)',
                         'id' => 'thumbnail-federaciones-image',
                         'post_type' => 'federaciones'
                 ));
-=======
+                new MultiPostThumbnails(array(
                         'label' => 'Banner Image (690x90)',
                         'id' => 'banner-image',
                         'post_type' => 'banner'
                 ));
                 add_image_size('post-banner-image-thumbnail', 690, 180);
->>>>>>> e0d3cae02e05a92f79289a459a415cd8ff8462be
                 add_image_size('post-second-featured-image-thumbnail', 290, 180);
                 add_image_size('post-headline-image-thumbnail', 930, 400);
                 add_image_size('post-thumbnail-headlihe-image-thumbnail', 200, 90);
@@ -146,9 +160,6 @@ function splitText($text, $limit) {
 		$text = $text . '...';
 	}
 	return $text;
-<<<<<<< HEAD
-}
-=======
 }
 
 function validateUrl($url = ''){
@@ -157,19 +168,3 @@ function validateUrl($url = ''){
     }
     return $url;
 }
-
-function create_post_type_banner(){
-        register_post_type('banner', array(
-                'label' => 'Banners',
-                'singular_label' =>'Banner',
-                'public' => true,
-                'show_ui' => true,
-                '_builtin' => false,
-                'permalink' => false,
-                'capability_type' => 'post',
-                'hierarchical' => false,
-                'supports' => array('title', 'thumbnail'),
-        ));
-}
-add_action('init', 'create_post_type_banner');
->>>>>>> e0d3cae02e05a92f79289a459a415cd8ff8462be

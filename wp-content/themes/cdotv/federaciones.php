@@ -1,10 +1,10 @@
 <div id="federaciones">
-	<h3 class="label-federaciones">Federaciones</h3>
+	<h3 class="label-federaciones"><img src="<?php echo bloginfo('template_url');?>/images/img-label-federaciones.png" /></h3>
 	<div align="center">
 		 <?php
 	        $args = array('post_type' => 'federaciones',
 	            'post_status' => 'publish',
-	            'orderby' => 'DESC',
+	            'orderby' => 'ASC',
 	        	'posts_per_page' => 12
 	        );
 	        

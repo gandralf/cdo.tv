@@ -166,7 +166,7 @@ img{
 #footer .content{
 	width: 925px;
 	height:215px;
-	margin:25px auto 0 auto;
+	margin: 10px auto 0 auto;
 	color:#e0e0e0;
 	font:14px arial;
 	position:relative;
@@ -211,14 +211,14 @@ img{
 }
 
 #footer .content .powered{
-        font: 10px arial;
+    font: 10px arial;
 	color:#bbb;
 	font-size:10px;
 	text-transform:uppercase;
 	text-align:right;
 	position:absolute;
 	top:190px;
-	margin:-10px 0 0 0;
+	margin:-30px 0 0 0;
 	right:0;
 }
 #footer .content .powered img{
@@ -454,12 +454,12 @@ span.menu-button-decoration {
 }
 
 /*==================|| Federaciones ||====================*/
+
+#federaciones {
+	margin-top: 10px;	
+}
 .label-federaciones {
-	color: #ffffff;
-	margin: 0px 0px -50px 80px;
-	padding-top: 5px;
-	width: 200px;
-	height: 30px;
+	margin: 10px 0px 0px 60px;
 	position: absolute;
 }
 
@@ -467,7 +467,7 @@ span.menu-button-decoration {
 	background-image: url("images/background-federaciones.png");
 	background-repeat: repeat-x;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 2px;
 	height: 160px;
 	width: 926px;
 }
@@ -477,11 +477,13 @@ span.menu-button-decoration {
 	display: block;
 	margin: 38px 0 0 0;
 	height: 115px;
-	width: 78px;
+	width: 77px;
 	padding: 0px;
 	float: left;
 }
 
 .panel-thumbnail-federaciones li img{
 	margin-top: 0px;
+	width: 75px;
+	height: 105px;
 }
