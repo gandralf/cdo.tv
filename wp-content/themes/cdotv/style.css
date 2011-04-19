@@ -521,22 +521,25 @@ span.menu-button-decoration {
 	height: 105px;
 }
 /* PROGRAMACION */
-#programacion{
-    background:url("images/background_window_headline.png") repeat scroll left top transparent;
+.programacion{
+    float:left;width:100%;padding:20px 0;
 }
 
 .dia_actual{
     background:url("images/background_window_headline.png") repeat scroll left top transparent;
-    padding:10px 20px;
-    color:#ce3132;
-    font-size:24px;
-    float:left;
+    color: #CE3132;
+    float: left;
+    font-size: 24px;
+    height: 19px;
+    margin: 0;
+    padding: 20px 10px;
+    width: 153px;
 }
 
 .box_grade_programacion{
-    width:757px;
     height:65px;
     overflow:hidden;
+    float:right;
 }
 .box_grade_programacion .bt_proxima{
     margin: 0 0 0 2px;
@@ -579,7 +582,6 @@ span.menu-button-decoration {
 }
 
 .box_grade_programacion ul li.central{
-    width:232px;
 }
 
 .box_grade_programacion ul li h3{
@@ -600,14 +602,13 @@ span.menu-button-decoration {
     height: 12px;
 }
 .box_grade_programacion ul li span.last{
-    float:right;
 }
 .box_grade_programacion ul li span,
 .box_grade_programacion ul li h3{
     color: #fff;
 }
-.box_grade_programacion ul li div.box_hora_central{
-    margin: 0 2px;
+.box_grade_programacion ul li div.box_hora_central h3{
+    background-color:#252525;
 }
 .box_grade_programacion ul li div.box_hora_esq,
 .box_grade_programacion ul li div.box_hora_central,
@@ -615,7 +616,6 @@ span.menu-button-decoration {
 }
 
 .box_grade_programacion ul li.central span.bottom{
-    margin-left:3px;
 }
 .box_grade_programacion ul li span.bottom{
     background-color:#b03233;
@@ -634,6 +634,11 @@ span.menu-button-decoration {
     color: #FFF;
     border-collapse:collapse;
 }
+.box_programacion_detalhe table tr{
+    float: left;
+    margin: 0 0 1px 0;
+    width: 100%;;
+}
 .box_programacion_detalhe table tr,
 .box_programacion_detalhe table td{
     height:146px;
@@ -643,8 +648,10 @@ span.menu-button-decoration {
     margin:0 1px 0 0;
     float:left;
 }
+.box_programacion_detalhe table td{
+}
 .box_programacion_detalhe table td.logo{
-    width:183px;
+    width:212px;
     background-color:transparent;
     margin:0;
 }
@@ -661,8 +668,31 @@ span.menu-button-decoration {
     float:left;
 }
 
+.box_programacion_detalhe tr td{
+    overflow:hidden;
+    font-size:10px;
+    padding:0;
+}
+
+.box_programacion_detalhe span{
+    position: relative;
+    left:10%;
+    top: 50%;
+}
 .box_programacion_detalhe .prog_1{
     width:56px;
+}
+.box_programacion_detalhe .prog_2{
+    width:112px;
+}
+.box_programacion_detalhe .prog_3{
+    width:168px;
+}
+.box_programacion_detalhe .prog_4{
+    width:224px;
+}
+.box_programacion_detalhe .prog_5{
+    width:280px;
 }
 /* \PROGRAMACION */
 

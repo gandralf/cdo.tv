@@ -9,7 +9,7 @@
 
 <?php get_header();?>
 
-<div id="programacion">
+<div class="programacion">
     <div class="box_header_programacion">
     	<h2 class="dia_actual">9 Abr</h2>
         <div class="box_grade_programacion">
@@ -17,11 +17,11 @@
             <ul>
             	<li>
             		<div class="box_hora_esq">
-            			<h3>18:00 pm</h3>
-            			<span>18:00 pm</span>
-            			<span>18:15 pm</span>
-            			<span>18:30 pm</span>
-            			<span class="last">18:45 pm</span>
+            			<h3>17:00 pm</h3>
+            			<span>17:00 pm</span>
+            			<span>17:15 pm</span>
+            			<span>17:30 pm</span>
+            			<span>17:45 pm</span>
             		</div>
                         <span class="bottom">&nbsp;</span>
             	</li>
@@ -31,17 +31,17 @@
             			<span>18:00 pm</span>
             			<span>18:15 pm</span>
             			<span>18:30 pm</span>
-            			<span class="last">18:45 pm</span>
+            			<span>18:45 pm</span>
             		</div>
                         <span class="bottom">&nbsp;</span>
             	</li>
             	<li>
             		<div class="box_hora_dir">
-            			<h3>18:00 pm</h3>
-            			<span>18:00 pm</span>
-            			<span>18:15 pm</span>
-            			<span>18:30 pm</span>
-            			<span class="last">18:45 pm</span>
+            			<h3>19:00 pm</h3>
+            			<span>19:00 pm</span>
+            			<span>19:15 pm</span>
+            			<span>19:30 pm</span>
+            			<span>19:45 pm</span>
             		</div>
                         <span class="bottom">&nbsp;</span>
             	</li>
@@ -58,10 +58,16 @@
             <td class="prog_1">
                 <span>BUENA SORTE!</span>
             </td>
+            <td class="prog_2">
+                <span>BUENA SORTE!</span>
+            </td>
             <td class="prog_3">
                 <span>BUENA SORTE!</span>
             </td>
             <td class="prog_5">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_1">
                 <span>BUENA SORTE!</span>
             </td>
         </tr>
@@ -69,13 +75,16 @@
             <td class="logo">
                 <span class="logo_cdo_premium"><a href="#">Canal Deporte Olimpico Premium</a></span>
             </td>
-            <td class="prog_1">
+            <td class="prog_2">
                 <span>BUENA SORTE!</span>
             </td>
-            <td class="prog_3">
+            <td class="prog_2">
                 <span>BUENA SORTE!</span>
             </td>
             <td class="prog_5">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_3">
                 <span>BUENA SORTE!</span>
             </td>
         </tr>
@@ -89,7 +98,16 @@
             <td class="prog_3">
                 <span>BUENA SORTE!</span>
             </td>
-            <td class="prog_5">
+            <td class="prog_4">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_1">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_2">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_1">
                 <span>BUENA SORTE!</span>
             </td>
         </tr>
