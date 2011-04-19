@@ -487,3 +487,110 @@ span.menu-button-decoration {
 	width: 75px;
 	height: 105px;
 }
+/* PROGRAMACION */
+#programacion{
+    background:url("images/background_window_headline.png") repeat scroll left top transparent;
+}
+
+.dia_actual{
+    background:url("images/background_window_headline.png") repeat scroll left top transparent;
+    padding:10px 20px;
+    color:#ce3132;
+    font-size:24px;
+    float:left;
+}
+
+.box_grade_programacion{
+    width:757px;
+    height:65px;
+    overflow:hidden;
+}
+.box_grade_programacion .bt_proxima{
+    margin: 0 0 0 2px;
+}
+.box_grade_programacion .bt_anterior{
+    margin: 0 2px 0 0;
+}
+
+.box_grade_programacion .bt_proxima,
+.box_grade_programacion .bt_anterior{
+    float:left;
+}
+
+.box_grade_programacion .bt_proxima a,
+.box_grade_programacion .bt_proxima,
+.box_grade_programacion .bt_anterior a,
+.box_grade_programacion .bt_anterior{
+    text-indent:-9000px;
+    display:block;
+    width:31px;
+    height:61px; 
+    background:url("images/sprite.png") repeat scroll left top transparent;
+}
+
+.box_grade_programacion .bt_proxima a,
+.box_grade_programacion .bt_proxima{
+    background:url("images/sprite.png") repeat scroll left -63px transparent;
+}
+
+.box_grade_programacion ul{
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+.box_grade_programacion ul li{
+    width:228px;
+    float:left;
+    list-style: none;
+}
+
+.box_grade_programacion ul li.central{
+    width:232px;
+}
+
+.box_grade_programacion ul li h3{
+    margin:0;
+    padding:0;
+    height:23px;
+    background-color:#1a1a1a;
+    font-size:14px;
+    padding:5px 80px;
+}
+.box_grade_programacion ul li span{
+    background-color: #575757;
+    float: left;
+    font-size: 10px;
+    margin: 0 0 0 1px;
+    width: 48px;
+    padding: 4px 4px;
+    height: 12px;
+}
+.box_grade_programacion ul li span.last{
+    float:right;
+}
+.box_grade_programacion ul li span,
+.box_grade_programacion ul li h3{
+    color: #fff;
+}
+.box_grade_programacion ul li div.box_hora_central{
+    margin: 0 2px;
+}
+.box_grade_programacion ul li div.box_hora_esq,
+.box_grade_programacion ul li div.box_hora_central,
+.box_grade_programacion ul li div.box_hora_dir{
+}
+
+.box_grade_programacion ul li.central span.bottom{
+    margin-left:3px;
+}
+
+.box_grade_programacion ul li span.bottom{
+    background-color:#b03233;
+    float:left;
+    width: 219px;
+}
+.box_grade_programacion ul li span.bottom{
+    background:url("images/sprite.png") repeat scroll left -401px transparent;
+}
+/* \PROGRAMACION */
