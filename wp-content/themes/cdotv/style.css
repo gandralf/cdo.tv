@@ -1,12 +1,46 @@
 @charset "UTF-8";
 *{outline: none !important;}
 body {
-	background: #000 url(images/bgNovo.jpg) repeat-x ;
-        font-family: Arial;
+    background: #000 url(images/bgNovo.jpg) repeat-x ;
+    font-family: Arial;
+    margin:0;
 }
 img{
-	border:none;
+    border:none;
 }
+
+#footer .content_footer,
+#container{
+    width: 925px;
+    margin: 0 auto;
+    display:table;
+    clear: both;
+}
+.content,
+#menu,
+#header{
+    float:left;width:100%;
+}
+#header{
+    margin:21px 0 0 0;
+}
+#menu{
+}
+h1.logo{
+    background: url(images/logo.png) no-repeat 0 0;
+    width:219px;
+    height:115px;
+    text-indent:-9000px;
+    float:left;
+    margin:0;
+}
+.banner{
+    float:left;
+    width:691px;
+    height:89px;
+    margin:15px 0 0 15px;
+}
+
 #tudo {
 	width: 1024px;
 	margin:auto;
@@ -162,75 +196,74 @@ img{
 	background-image: url(images/bgfooter.png);
 	background-repeat: repeat-x;
 	height: 215px;
+    clear:both;
 }
-#footer .content{
-	width: 925px;
+
+#footer .content_footer{
 	height:215px;
-	margin: 10px auto 0 auto;
 	color:#e0e0e0;
 	font:14px arial;
-	position:relative;
 }
-#footer .content a{
+#footer .content_footer a{
 	color:#e0e0e0;
 	text-decoration:none;
 	position:relative;
 }
-#footer .content h5{
+#footer .content_footer h5{
 	font:14px arial;
 	color:#ce3132;
 	margin:0;
 	font-weight:bold;
 }
-#footer .content ul{
+#footer .content_footer ul{
 	list-style:none;
 	padding:0;
 	margin:0;
 }
-#footer .content ul li{
+#footer .content_footer ul li{
 	background: url(images/bullet.png) center left no-repeat;
 	padding:0 0 0 10px;
 }
-#footer .content ul li a{
+#footer .content_footer ul li a{
 }
-#footer .content ul li a:hover{
+#footer .content_footer ul li a:hover{
 	color:#ce3132;
 }
-#footer .content .fNav{
+#footer .content_footer .fNav{
 	float:left;
 	padding:35px 45px 0 12px;
 	line-height:20px;
 }
-#footer .content .cdo{
+#footer .content_footer .cdo{
 	float:right;
 	padding:20px 0 0 0;
 	text-align:right;
 }
-#footer .content .cdo p{
+#footer .content_footer .cdo p{
 	margin:22px 0 0 0;
 }
 
-#footer .content .powered{
+#footer .content_footer .powered{
     font: 10px arial;
 	color:#bbb;
 	font-size:10px;
 	text-transform:uppercase;
 	text-align:right;
-	position:absolute;
+	position:relative;
 	top:190px;
 	margin:-30px 0 0 0;
 	right:0;
 }
-#footer .content .powered img{
+#footer .content_footer .powered img{
 	margin:3px 0 0 0;
 	border:none;
 }
-#footer .content p.copyright{
+#footer .content_footer p.copyright{
 	color:#bbb;
 	font-size:10px;
 	text-transform:uppercase;
 	text-align:left;
-	position:absolute;
+	position:relative;
 	top:190px;
 	margin:0;
 	left:0;
@@ -300,9 +333,9 @@ img{
 /*============ Menu ============*/
 
 #menu {
-	width: 926px;
-	height: 35px;
-	margin: 20px 0px 5px 0px;
+    width: 926px;
+    height: 35px;
+    margin: 10px 0 0 0;
 }
 .menu-border-left {
 	background: url(images/menu-bar-left.png) 0 0 transparent no-repeat;
@@ -594,3 +627,4 @@ span.menu-button-decoration {
     background:url("images/sprite.png") repeat scroll left -401px transparent;
 }
 /* \PROGRAMACION */
+
