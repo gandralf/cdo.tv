@@ -584,7 +584,6 @@ span.menu-button-decoration {
 .box_grade_programacion ul li.central span.bottom{
     margin-left:3px;
 }
-
 .box_grade_programacion ul li span.bottom{
     background-color:#b03233;
     float:left;
@@ -592,5 +591,44 @@ span.menu-button-decoration {
 }
 .box_grade_programacion ul li span.bottom{
     background:url("images/sprite.png") repeat scroll left -401px transparent;
+}
+.box_programacion_detalhe,
+.box_header_programacion{
+    float:left;
+    width:100%;
+}
+.box_programacion_detalhe table{
+    color: #FFF;
+    border-collapse:collapse;
+}
+.box_programacion_detalhe table tr,
+.box_programacion_detalhe table td{
+    height:146px;
+}
+.box_programacion_detalhe table td{
+    background-color:#323232;
+    margin:0 1px 0 0;
+    float:left;
+}
+.box_programacion_detalhe table td.logo{
+    width:183px;
+    background-color:transparent;
+    margin:0;
+}
+.box_programacion_detalhe .logo_cdo_radio a,
+.box_programacion_detalhe .logo_cdo_premium a,
+.box_programacion_detalhe .logo_cdo a,
+.box_programacion_detalhe .logo_cdo_radio,
+.box_programacion_detalhe .logo_cdo_premium,
+.box_programacion_detalhe .logo_cdo{
+    background:url("images/sprite.png") repeat scroll left -136px transparent;
+    width:156px;
+    height:70px;
+    text-indent:-9000px;
+    float:left;
+}
+
+.box_programacion_detalhe .prog_1{
+    width:56px;
 }
 /* \PROGRAMACION */
