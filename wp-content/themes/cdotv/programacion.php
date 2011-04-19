@@ -10,7 +10,6 @@
 <?php get_header();?>
 
 <div id="programacion">
-
     <div class="box_header_programacion">
     	<h2 class="dia_actual">9 Abr</h2>
         <div class="box_grade_programacion">
@@ -50,6 +49,51 @@
             <span class="bt_proxima"><a href="#">Proxima</a></span>
         </div>
     </div>
-
+    <div class="box_programacion_detalhe">
+    <table>
+        <tr>
+            <td class="logo">
+                <span class="logo_cdo"><a href="#">Canal Deporte Olimpico</a></span>
+            </td>
+            <td class="prog_1">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_3">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_5">
+                <span>BUENA SORTE!</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="logo">
+                <span class="logo_cdo_premium"><a href="#">Canal Deporte Olimpico Premium</a></span>
+            </td>
+            <td class="prog_1">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_3">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_5">
+                <span>BUENA SORTE!</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="logo">
+                <span class="logo_cdo_radio"><a href="#">Canal Deporte Olimpico Radio</a></span>
+            </td>
+            <td class="prog_1">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_3">
+                <span>BUENA SORTE!</span>
+            </td>
+            <td class="prog_5">
+                <span>BUENA SORTE!</span>
+            </td>
+        </tr>
+    </table>
+    </div>
 </div>
 <?php get_footer();?>
