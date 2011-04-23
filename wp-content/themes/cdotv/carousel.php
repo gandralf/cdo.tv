@@ -7,7 +7,7 @@
                     'post_status' => 'publish',
                     'orderby' => 'DESC',
                     'posts_per_page' => 4,
-                    'categoty_name' => 'headline');
+                    'category_name' => 'headline');
                 $wp_query = new WP_Query($args);
                 $countC = 0;
                 if(have_posts()): while(have_posts()): the_post();
