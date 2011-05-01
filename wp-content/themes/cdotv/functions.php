@@ -70,6 +70,21 @@ function cdotv_widgets_init() {
 }
 add_action( 'widgets_init', 'cdotv_widgets_init' );
 
+function create_post_type_noticias(){
+        register_post_type('noticias', array(
+                'label' => 'Noticias',
+                'singular_label' =>'noticia',
+                'public' => true,
+                'show_ui' => true,
+                '_builtin' => false,
+                'capability_type' => 'post',
+                'hierarchical' => false,
+                'supports' => array('title', 'author', 'excerpt', 'editor', 'thumbnail'),
+                'taxonomies' => array('category'),
+        ));
+}
+add_action('init', 'create_post_type_noticias');
+
 function create_post_type_contenido(){
         register_post_type('contenido', array(
                 'label' => 'Contenidos',
@@ -141,7 +156,7 @@ if(function_exists('add_theme_support')){
                         'post_type' => 'federaciones'
                 ));
                 new MultiPostThumbnails(array(
-                        'label' => 'Banner Image (690x90)',
+                        'label' => 'Banner Image (615x115)',
                         'id' => 'banner-image',
                         'post_type' => 'banner'
                 ));

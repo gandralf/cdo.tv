@@ -32,18 +32,23 @@ img{
 }
 h1.logo{
     background: url(images/logo.png) no-repeat 0 0;
-    width:219px;
-    height:115px;
+    width:295px;
+    height:135px;
     text-indent:-9000px;
     float:left;
     margin:0;
 }
 .banner{
     float:left;
-    width:691px;
-    height:89px;
+    width:615px;
+    overflow:hidden;
+    height:115px;
     margin:15px 0 0 15px;
     text-align:right;
+}
+.banner img{
+    width:615px;
+    height:115px;
 }
 
 #tudo {
@@ -281,24 +286,19 @@ h1.logo{
 	font-size:10px;
 	text-transform:uppercase;
 	text-align:right;
-	position:relative;
-	top:190px;
-	margin:-30px 0 0 0;
-	right:0;
+        width:100%;
+        float:right;
 }
 #footer .content_footer .powered img{
 	margin:3px 0 0 0;
 	border:none;
 }
-#footer .content_footer p.copyright{
+#footer .content_footer .copyright{
 	color:#bbb;
 	font-size:10px;
 	text-transform:uppercase;
 	text-align:left;
-	position:relative;
-	top:190px;
-	margin:0;
-	left:0;
+        float:left;
 }
 #contacto{
 	background-image: url(images/bgContacto.gif);
@@ -367,7 +367,7 @@ h1.logo{
 #menu {
     width: 926px;
     height: 35px;
-    margin: 10px 0 0 0;
+    margin: 10px 0 15px 0;
 }
 .menu-border-left {
 	background: url(images/menu-bar-left.png) 0 0 transparent no-repeat;
@@ -429,7 +429,7 @@ h1.logo{
 
 .menu-center ul li {
 	display: inline-block;
-	margin: 0 50px 0 50px;
+	margin: 0 38px;
 }
 
 .menu-center ul li a {
@@ -448,7 +448,7 @@ span.menu-button-decoration {
     background-position: 0px 0px;
     background-repeat: no-repeat;
     height: 14px;
-    margin: 10px 0 0 -23px;
+    margin: 9px 0 0 -23px;
     position: absolute;
     width: 11px;
 }
@@ -465,6 +465,7 @@ span.menu-button-decoration {
 	margin: 20px 0 5px;
 }
 
+.list li,
 .highlight-list-home li {
 	display: block;
 	margin: 0px 0px 0px 0px;
@@ -474,15 +475,20 @@ span.menu-button-decoration {
 	float: left;
 }
 
+.list li img,
 .highlight-list-home li img {
 	margin-top: 10px;
+        width:288px;
+        height:177px;
 }
 
+.list li img.icone-video,
 .highlight-list-home li img.icone-video {
     margin: 158px 0 0 -77px !important;
     position: absolute;
 }
 
+.list li h3,
 .highlight-list-home li h3 {
     color: #FFFFFF;
     float: left;
@@ -494,6 +500,25 @@ span.menu-button-decoration {
     width: 205px;
 }
 
+.list li h3,
+.list li .more{
+    color:#CE3132 !important;
+}
+
+.list li .more{
+    float:left;
+    margin-left:12px;
+    padding-right:15px;
+    text-decoration:none;
+    font-size:14px;
+    background: url(images/ver-mas-decoration.png) no-repeat transparent;
+    background-position: right 3px;
+}
+.list li .more:hover {
+    text-decoration:underline;
+}
+
+.list li p,
 .highlight-list-home li p {
     color: #FFFFFF;
     float: left;
@@ -504,6 +529,10 @@ span.menu-button-decoration {
     text-align: left;
     width: 282px;
     height: 40px;
+}
+
+.list li p{
+    height:25px;
 }
 
 .textUnderline {

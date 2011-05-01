@@ -9,8 +9,13 @@
         <?php dynamic_sidebar('third-footer-widget-area');?>
         <?php dynamic_sidebar('fourth-footer-widget-area');?>
         <p class="powered">
-            Powered by <br/><a href="http://www.gonow.com.br" target='_blank'><img src="<?php echo bloginfo('template_url');?>/images/logoGonow.gif" /></a></p>
-        <p class="copyright">&copy; 2010 CDO Todos los derechos reservados</p>
+            Powered by 
+            <br/>
+            <a href="http://www.gonow.com.br" target='_blank'>
+                <img src="<?php echo bloginfo('template_url');?>/images/logoGonow.gif" />
+            </a>
+            <span class="copyright">&copy; 2010 CDO Todos los derechos reservados</span>
+        </p>
     </div>
     
 </div>
