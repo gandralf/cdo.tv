@@ -14,25 +14,13 @@
  * @package WordPress
  */
 
-define('ENV', 'DEV');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'cdotv');
 
-switch(ENV){
-    case 'PROD':
-        define('DB_USER', 'cdotv');
-        define('DB_PASSWORD', 'cdotv@123');
-        define('DB_HOST', 'localhost');
-    break;
-    case 'DEV':
-    default:
-        define('DB_USER', 'cdotv');
-        define('DB_PASSWORD', 'cdotv@123');
-        define('DB_HOST', 'localhost');
-    break;
-}
-
+define('DB_USER', 'cdotv');
+define('DB_PASSWORD', 'cdotv@123');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
