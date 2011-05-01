@@ -39,6 +39,7 @@ h1.logo{
     width:691px;
     height:89px;
     margin:15px 0 0 15px;
+    text-align:right;
 }
 
 #tudo {
@@ -148,6 +149,31 @@ h1.logo{
         margin-left: 50%;
         position: relative;
 }
+#videos_content .internal {
+        color:#FFFFFF;
+        font-size: 14px;
+}
+#videos_content .internal .published {
+        font-size:13px;
+        background-color:#323232;
+        padding:5px;
+}
+#videos_content .internal .published .date {
+        color:#DC251D;
+        display:block;
+}
+#videos_content .internal .title {
+        font-size:28px;
+        padding-bottom:5px;
+        margin:0;
+        border-bottom:1px solid #FFFFFF;
+        font-weight: normal;
+}
+#videos_content .internal img {
+        margin:5px 10px 10px 0;
+        width: 290px;
+        height:180px;
+}
 #news .new_content{
         display: inline-block;
         width: 344px;
@@ -226,7 +252,7 @@ h1.logo{
 }
 #footer .content_footer ul li a{
 }
-#footer .content_footer ul li a:hover{
+#footer .content_footer ul li a:hover {
 	color:#ce3132;
 }
 #footer .content_footer .fNav{

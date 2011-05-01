@@ -19,23 +19,10 @@
         <div id="container">
             <!-- HEADER -->
             <div id="header">
-                    <h1 class="logo">CDO - CANAL DEPORTE OLIMPICO</h1>
-                    <!-- BANNER -->
-                    <div class="banner">
-<?php
-$args = array('post_type' => 'banner',
-    'post_status' => 'publish',
-    'orderby' => 'rand',
-    'posts_per_page' => 1);
-$wp_query = new WP_Query($args);
-if(have_posts()): while(have_posts()): the_post();
-if(class_exists('MultiPostThumbnails') && MultiPostThumbnails::has_post_thumbnail('banner', 'banner-image')):
-    echo '<a href="'.validateUrl(get_the_title()).'" target="_blank">';
-MultiPostThumbnails::the_post_thumbnail('banner', 'banner-image', null, 'banner-image-thumbnail');
-echo '</a>';
-endif;
-endwhile;endif;wp_reset_query();
-?>
+                <h1 class="logo">CDO - CANAL DEPORTE OLIMPICO</h1>
+                <!-- BANNER -->
+                <div class="banner">
+                <?php banner(); ?>
                 </div>
                 <!-- /BANNER -->
                 <div id="menu">
@@ -49,4 +36,3 @@ endwhile;endif;wp_reset_query();
         <!-- /HEADER -->
         <!-- CONTENT -->
         <div class="content">
-
