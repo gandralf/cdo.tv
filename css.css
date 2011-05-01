@@ -16,6 +16,8 @@ img{
 	text-decoration: none;
 	clip: rect(auto,auto,auto,auto);
 }
+.style1 {font-size: 16px}
+.style2 {color: #ce3132}
 #top {
 	width:926px;
 	margin:0px auto 0;
@@ -46,6 +48,7 @@ img{
 	color:#e0e0e0;
 	font:14px arial;
 	position:relative;
+	top: -10px;
 }
 #footer .content a{
 	color:#e0e0e0;
@@ -53,7 +56,7 @@ img{
 	position:relative;
 }
 #footer .content h5{
-	font:14px arial;
+	font:16px arial;
 	color:#ce3132;
 	margin:0;
 	font-weight:bold;
