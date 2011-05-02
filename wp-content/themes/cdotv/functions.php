@@ -79,7 +79,7 @@ function create_post_type_noticias(){
                 '_builtin' => false,
                 'capability_type' => 'post',
                 'hierarchical' => false,
-                'supports' => array('title', 'author', 'excerpt', 'editor', 'thumbnail'),
+                'supports' => array('title', 'author', 'excerpt', 'editor', 'thumbnail', 'custom-fields'),
                 'taxonomies' => array('category'),
         ));
 }
@@ -130,7 +130,6 @@ function create_post_type_banner(){
 }
 add_action('init', 'create_post_type_banner');
 
-
 if(function_exists('add_theme_support')){ 
         add_theme_support('post-thumbnails'); 
         set_post_thumbnail_size(100,120);
@@ -138,17 +137,17 @@ if(function_exists('add_theme_support')){
                 new MultiPostThumbnails(array(
                         'label' => 'Second Featured Image (290x180)',
                         'id' => 'second-featured-image',
-                        'post_type' => 'contenido'
+                        'post_type' => 'noticias'
                 ));
                 new MultiPostThumbnails(array(
                         'label' => 'Headline Image (930x400)',
                         'id' => 'headline-image',
-                        'post_type' => 'contenido'
+                        'post_type' => 'noticias'
                 ));
                 new MultiPostThumbnails(array(
                         'label' => 'Thumbnail Headline Image (200x90)',
                         'id' => 'thumbnail-headline-image',
-                        'post_type' => 'contenido'
+                        'post_type' => 'noticias'
                 ));
                 new MultiPostThumbnails(array(
                         'label' => 'Thumbnail Federaciones (100x75)',

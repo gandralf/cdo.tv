@@ -599,35 +599,28 @@ span.menu-button-decoration {
 
 .box_grade_programacion{
     height:65px;
-    overflow:hidden;
-    float:right;
-}
-.box_grade_programacion .bt_proxima{
-    margin: 0 0 0 2px;
-}
-.box_grade_programacion .bt_anterior{
-    margin: 0 2px 0 0;
+	float:left
 }
 
-.box_grade_programacion .bt_proxima,
-.box_grade_programacion .bt_anterior{
+.box_programacion .bt_anterior{
+    margin: 0 1px 0 0;
+}
+.box_programacion .bt_proxima,
+.box_programacion .bt_anterior{
     float:left;
 }
-
-.box_grade_programacion .bt_proxima a,
-.box_grade_programacion .bt_proxima,
-.box_grade_programacion .bt_anterior a,
-.box_grade_programacion .bt_anterior{
+.box_programacion .bt_proxima a,
+.box_programacion .bt_anterior a{
     text-indent:-9000px;
     display:block;
     width:31px;
     height:61px; 
-    background:url("images/sprite.png") repeat scroll left top transparent;
+    background-image:url("images/sprite.png");
+	background-position:0 0;
 }
 
-.box_grade_programacion .bt_proxima a,
-.box_grade_programacion .bt_proxima{
-    background:url("images/sprite.png") repeat scroll left -63px transparent;
+.box_programacion .bt_proxima a{
+   background-position:0 -63px;
 }
 
 .box_grade_programacion ul{
@@ -638,6 +631,9 @@ span.menu-button-decoration {
 
 .box_grade_programacion ul li{
     width:228px;
+	margin-right:2px;
+	height:62px;
+	overflow:hidden;
     float:left;
     list-style: none;
 }
@@ -686,10 +682,8 @@ span.menu-button-decoration {
 .box_grade_programacion ul li span.bottom{
     background:url("images/sprite.png") repeat scroll left -401px transparent;
 }
-.box_programacion_detalhe,
-.box_header_programacion{
-    float:left;
-    width:100%;
+.box_programacion_detalhe{
+    clear:both    
 }
 .box_programacion_detalhe table{
     color: #FFF;
@@ -709,24 +703,37 @@ span.menu-button-decoration {
     margin:0 1px 0 0;
     float:left;
 }
-.box_programacion_detalhe table td{
+
+.box_type_programacion{
+	width:173px;
+	float:left
 }
-.box_programacion_detalhe table td.logo{
-    width:212px;
-    background-color:transparent;
+
+.box_type_programacion .logoProgramacion{
+    width:173px;    
     margin:0;
+	clear:both
 }
-.box_programacion_detalhe .logo_cdo_radio a,
-.box_programacion_detalhe .logo_cdo_premium a,
-.box_programacion_detalhe .logo_cdo a,
-.box_programacion_detalhe .logo_cdo_radio,
-.box_programacion_detalhe .logo_cdo_premium,
-.box_programacion_detalhe .logo_cdo{
+.box_type_programacion .logoProgramacion .logo{
+   height: 146px;
+}
+
+.box_type_programacion .logo_cdo_radio a,
+.box_type_programacion .logo_cdo_premium a,
+.box_type_programacion .logo_cdo a,
+.box_type_programacion .logo_cdo_radio,
+.box_type_programacion .logo_cdo_premium,
+.box_type_programacion .logo_cdo{
     background:url("images/sprite.png") repeat scroll left -136px transparent;
     width:156px;
     height:70px;
     text-indent:-9000px;
     float:left;
+}
+
+.box_programacion{
+	float: left;
+    width: 753px;
 }
 
 .box_programacion_detalhe tr td{
@@ -735,7 +742,7 @@ span.menu-button-decoration {
     padding:0;
 }
 
-.box_programacion_detalhe span{
+.box_programacion_detalhe span, .logoProgramacion span{
     position: relative;
     left:10%;
     top: 50%;
@@ -755,5 +762,58 @@ span.menu-button-decoration {
 .box_programacion_detalhe .prog_5{
     width:280px;
 }
+
+.box_programacion_galery{
+	width:690px;
+	overflow:hidden;
+	float:left
+}
+
+.box_programacion_mask{
+	position:relative;
+	width:10000px;
+	left:0
+}
 /* \PROGRAMACION */
 
+
+
+/* NOTÍCIA */
+
+#content-noticia{
+	width:97%;
+	background:#252525;
+	padding:15px 1.5%;
+	margin:15px 0 50px;
+	color:#e0e0e0;
+	font-size:13px;
+	overflow:hidden
+}
+
+#content-noticia h2{
+	font-size:30px;
+	font-weight:normal;
+	margin:0
+}
+
+#content-noticia .subtitle{
+	font-weight:bold;
+	margin:5px 0;
+	font-size:12px;
+}
+
+#content-noticia .published{
+	background:#323232;
+	padding:5px 10px;
+	margin:12px 0 20px
+}
+#content-noticia .published .date-published{
+	color:#dc251d;
+	font-size:11px;
+	margin-bottom:2px
+}
+#content-noticia .image-noticia{
+	float:left;
+	margin:0 15px 10px 0
+}
+/* NOTÍCIA */

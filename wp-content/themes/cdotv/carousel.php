@@ -3,7 +3,7 @@
                 <div id="carousel_here"></div>
                 <script>
                 var dataCarousel = [<?php
-                $args = array('post_type' => 'contenido',
+                $args = array('post_type' => 'noticias',
                     'post_status' => 'publish',
                     'orderby' => 'DESC',
                     'posts_per_page' => 4,
@@ -11,11 +11,11 @@
                 $wp_query = new WP_Query($args);
                 $countC = 0;
                 if(have_posts()): while(have_posts()): the_post();
-                    if(class_exists('MultiPostThumbnails') && MultiPostThumbnails::has_post_thumbnail('contenido', 'headline-image')):
-                        $img[$countC] = MultiPostThumbnails::get_the_post_thumbnail('contenido', 'headline-image', null, 'headline-image-thumbnail');
+                    if(class_exists('MultiPostThumbnails') && MultiPostThumbnails::has_post_thumbnail('noticias', 'headline-image')):
+                        $img[$countC] = MultiPostThumbnails::get_the_post_thumbnail('noticias', 'headline-image', null, 'headline-image-thumbnail');
                     endif;
-                    if(class_exists('MultiPostThumbnails') && MultiPostThumbnails::has_post_thumbnail('contenido', 'thumbnail-headline-image')):
-                        $thumb[$countC] = MultiPostThumbnails::get_the_post_thumbnail('contenido', 'thumbnail-headline-image', null, 'thumbnail-headline-thumbnail');
+                    if(class_exists('MultiPostThumbnails') && MultiPostThumbnails::has_post_thumbnail('noticias', 'thumbnail-headline-image')):
+                        $thumb[$countC] = MultiPostThumbnails::get_the_post_thumbnail('noticias', 'thumbnail-headline-image', null, 'thumbnail-headline-thumbnail');
                     endif;
                     $img[$countC] = isset($img[$countC]) && strlen($img[$countC]) > 5 ? 'img:\''.$img[$countC].'\',' : null;
                     $thumb[$countC] = isset($thumb[$countC]) && strlen($thumb[$countC]) > 5 ? 'thumb:\''.$thumb[$countC].'\',' : null;
