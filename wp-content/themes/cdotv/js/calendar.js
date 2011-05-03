@@ -52,8 +52,8 @@ Calendar = {
 			var entry = entries[i],
 				title = entry.title.$t,
 				when = entry['gd$when'],
-				start = (when) ? new Date(entry['gd$when'][0].startTime) : "",
-				end = (when) ? new Date(entry['gd$when'][0].endTime) : "";
+				start = (when) ? Utils.date.newPortableDate(entry['gd$when'][0].startTime) : "",
+				end = (when) ? Utils.date.newPortableDate(entry['gd$when'][0].endTime) : "";
 			
 			if(Utils.date.equalDate(start, today)) {
 				var startRw = start,
@@ -198,6 +198,13 @@ Utils = {
 			var dateNew = new Date(date.getTime() + (qtd * 24 * 60 * 60000));
 			
 			return (dateNew);
+		},
+		
+		newPortableDate: function(str){
+			var dta = str.substr(0, 10).split('-');
+			var hr = str.substr(11, 8).split(':');
+
+			return new Date(dta[0], dta[1] - 1, dta[2], hr[0], hr[1], hr[2]);
 		}
 	
 	}

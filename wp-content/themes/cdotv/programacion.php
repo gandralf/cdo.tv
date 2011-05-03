@@ -56,6 +56,6 @@
 
 <script language="JavaScript" type="text/javascript" src="<?php echo bloginfo('template_url');?>/js/calendar.js"></script>
 
-<script src="http://www.google.com/calendar/feeds/cdo.tv.teste@gmail.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
-<script src="http://www.google.com/calendar/feeds/obajn3657vj6oja3v99116jgp0@group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
-<script src="http://www.google.com/calendar/feeds/p5j8ff9aukqq62udpda5qp4dgg@group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
+<script src="http://www.google.com/calendar/feeds/contenido@cdo.tv/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
+<script src="http://www.google.com/calendar/feeds/loa1t9pmcddfb2ktbdq5q4c17k@group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
+<script src="http://www.google.com/calendar/feeds/poaaqbb8quj5n28fo7e6q26itk@group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
