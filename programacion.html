@@ -40,12 +40,50 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
     
     
       <div id="carrocel"> 
-        <div align="center"><br />
-          <img src="images/pr1.png" width="925" height="512" border="0" usemap="#Map2" />
-<map name="Map2" id="Map2">
-  <area shape="rect" coords="181,1,215,61" href="programacion8.html" target="_self" />
-<area shape="rect" coords="883,2,925,62" href="programacion2.html" target="_self" />
-</map></div>
+        <div align="center">
+			<div class="programacion">
+			    <div class="box_type_programacion">
+					<h2 class="dia_actual">3 May</h2>
+
+					<div class="logoProgramacion">
+						<div class="logo"><span class="logo_cdo"><a href="#">Canal Deporte Olimpico</a></span></div>
+						<div class="logo"><span class="logo_cdo_premium"><a href="#">Canal Deporte Olimpico Premium</a></span></div>
+						<div class="logo"><span class="logo_cdo_radio"><a href="#">Canal Deporte Olimpico Radio</a></span></div>
+					</div>
+
+				</div>
+
+				<div class="box_programacion">
+					<span class="bt_anterior"><a href="#">Anterior</a></span>
+
+					<div class="box_programacion_galery">
+						<div class="box_programacion_mask">
+
+							<div class="box_grade_programacion">				
+								<ul>
+									<li>
+											<div class="box_hora_esq">
+													<h3>17:00 pm</h3>
+													<span>17:00 pm</span>
+													<span>17:15 pm</span>
+													<span>17:30 pm</span>
+													<span>17:45 pm</span>
+											</div>
+											<span class="bottom">&nbsp;</span>
+									</li>					
+								</ul>
+							</div>	
+
+							<div class="box_programacion_detalhe">	
+								<table id="tblAgenda"></table>
+							</div>
+						</div>
+					</div>
+
+					<span class="bt_proxima"><a href="#">Proxima</a></span>
+				</div>
+			</div>
+        </div>
         
         <div id="videos">
           <div align="center"><br />
@@ -92,5 +130,12 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
 </div>
 
 <!-- 			footer -->
+<script type="text/javascript" src="js/jquery.min.1.5.2.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+<!-- ><script src="http://www.google.com/calendar/feeds/cdo.tv.teste@gmail.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script> -->
+<script src="http://www.google.com/calendar/feeds/contenido@cdo.tv/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
+<script src="http://www.google.com/calendar/feeds/loa1t9pmcddfb2ktbdq5q4c17k@group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
+<script src="http://www.google.com/calendar/feeds/poaaqbb8quj5n28fo7e6q26itk@group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
+
 </body>
 </html>

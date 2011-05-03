@@ -241,3 +241,198 @@ img{
 	text-align:right;
 	width:164px;
 }
+
+/* PROGRAMACION */
+.programacion{
+    float:left;width:100%;padding:20px 0;
+}
+
+.dia_actual{
+    background:url("images/background_window_headline.png") repeat scroll left top transparent;
+    color: #CE3132;
+    float: left;
+    font-size: 24px;
+    height: 19px;
+    margin: 0;
+    padding: 20px 10px;
+    width: 153px;
+}
+
+.box_grade_programacion{
+    height:65px;
+	float:left
+}
+
+.box_programacion .bt_anterior{
+    margin: 0 1px 0 0;
+}
+.box_programacion .bt_proxima,
+.box_programacion .bt_anterior{
+    float:left;
+}
+.box_programacion .bt_proxima a,
+.box_programacion .bt_anterior a{
+    text-indent:-9000px;
+    display:block;
+    width:31px;
+    height:61px; 
+    background-image:url("images/sprite.png");
+	background-position:0 0;
+}
+
+.box_programacion .bt_proxima a{
+   background-position:0 -63px;
+}
+
+.box_grade_programacion ul{
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+.box_grade_programacion ul li{
+    width:228px;
+	margin-right:2px;
+	height:62px;
+	overflow:hidden;
+    float:left;
+    list-style: none;
+}
+
+.box_grade_programacion ul li.central{
+}
+
+.box_grade_programacion ul li h3{
+    margin:0;
+    padding:0;
+    height:23px;
+    background-color:#1a1a1a;
+    font-size:14px;
+    padding:5px 80px;
+}
+.box_grade_programacion ul li span{
+    background-color: #575757;
+    float: left;
+    font-size: 10px;
+    margin: 0 0 0 1px;
+    width: 48px;
+    padding: 4px 4px;
+    height: 12px;
+}
+.box_grade_programacion ul li span.last{
+}
+.box_grade_programacion ul li span,
+.box_grade_programacion ul li h3{
+    color: #fff;
+}
+.box_grade_programacion ul li div.box_hora_central h3{
+    background-color:#252525;
+}
+.box_grade_programacion ul li div.box_hora_esq,
+.box_grade_programacion ul li div.box_hora_central,
+.box_grade_programacion ul li div.box_hora_dir{
+}
+
+.box_grade_programacion ul li.central span.bottom{
+}
+.box_grade_programacion ul li span.bottom{
+    background-color:#b03233;
+    float:left;
+    width: 219px;
+}
+.box_grade_programacion ul li span.bottom{
+    background:url("images/sprite.png") repeat scroll left -401px transparent;
+}
+.box_programacion_detalhe{
+    clear:both    
+}
+.box_programacion_detalhe table{
+    color: #FFF;
+    border-collapse:collapse;
+}
+.box_programacion_detalhe table tr{
+    float: left;
+    margin: 0 0 1px 0;
+    width: 100%;;
+}
+.box_programacion_detalhe table tr,
+.box_programacion_detalhe table td{
+    height:146px;
+}
+.box_programacion_detalhe table td{
+    background-color:#323232;
+    margin:0 1px 0 0;
+    float:left;
+}
+
+.box_type_programacion{
+	width:173px;
+	float:left
+}
+
+.box_type_programacion .logoProgramacion{
+    width:173px;    
+    margin:0;
+	clear:both
+}
+.box_type_programacion .logoProgramacion .logo{
+   height: 146px;
+}
+
+.box_type_programacion .logo_cdo_radio a,
+.box_type_programacion .logo_cdo_premium a,
+.box_type_programacion .logo_cdo a,
+.box_type_programacion .logo_cdo_radio,
+.box_type_programacion .logo_cdo_premium,
+.box_type_programacion .logo_cdo{
+    background:url("images/sprite.png") repeat scroll left -136px transparent;
+    width:156px;
+    height:70px;
+    text-indent:-9000px;
+    float:left;
+}
+
+.box_programacion{
+	float: left;
+    width: 753px;
+}
+
+.box_programacion_detalhe tr td{
+    overflow:hidden;
+    font-size:10px;
+    padding:0;
+}
+
+.box_programacion_detalhe span, .logoProgramacion span{
+    position: relative;
+    left:10%;
+    top: 50%;
+}
+.box_programacion_detalhe .prog_1{
+    width:56px;
+}
+.box_programacion_detalhe .prog_2{
+    width:112px;
+}
+.box_programacion_detalhe .prog_3{
+    width:168px;
+}
+.box_programacion_detalhe .prog_4{
+    width:224px;
+}
+.box_programacion_detalhe .prog_5{
+    width:280px;
+}
+
+.box_programacion_galery{
+	width:690px;
+	overflow:hidden;
+	float:left
+}
+
+.box_programacion_mask{
+	position:relative;
+	width:10000px;
+	left:0
+}
+/* \PROGRAMACION */
