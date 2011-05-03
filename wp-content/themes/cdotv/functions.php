@@ -132,38 +132,45 @@ add_action('init', 'create_post_type_banner');
 
 if(function_exists('add_theme_support')){ 
         add_theme_support('post-thumbnails'); 
-        set_post_thumbnail_size(100,120);
+        set_post_thumbnail_size(100,120,true);
         if (class_exists('MultiPostThumbnails')) {
+				//headline
                 new MultiPostThumbnails(array(
                         'label' => 'Second Featured Image (290x180)',
                         'id' => 'second-featured-image',
                         'post_type' => 'noticias'
                 ));
                 new MultiPostThumbnails(array(
-                        'label' => 'Headline Image (930x400)',
+                        'label' => 'Headline Image (926x389)',
                         'id' => 'headline-image',
                         'post_type' => 'noticias'
                 ));
                 new MultiPostThumbnails(array(
-                        'label' => 'Thumbnail Headline Image (200x90)',
+                        'label' => 'Thumbnail Headline Image (219x115)',
                         'id' => 'thumbnail-headline-image',
                         'post_type' => 'noticias'
                 ));
+				//federaciones
                 new MultiPostThumbnails(array(
                         'label' => 'Thumbnail Federaciones (100x75)',
                         'id' => 'thumbnail-federaciones-image',
                         'post_type' => 'federaciones'
                 ));
+				//banner
                 new MultiPostThumbnails(array(
-                        'label' => 'Banner Image (615x115)',
+                        'label' => 'Banner Image (594x90)',
                         'id' => 'banner-image',
                         'post_type' => 'banner'
                 ));
-                add_image_size('post-banner-image-thumbnail', 690, 180);
-                add_image_size('post-second-featured-image-thumbnail', 290, 180);
-                add_image_size('post-headline-image-thumbnail', 930, 400);
-                add_image_size('post-thumbnail-headlihe-image-thumbnail', 200, 90);
-                add_image_size('post-thumbnail-federaciones-image', 75, 100);
+				//thumbnail do banner
+                add_image_size('post-banner-image-thumbnail', 594, 90, true);
+				//second image
+                add_image_size('post-second-featured-image-thumbnail', 290, 180, true);
+				//headline
+                add_image_size('post-headline-image-thumbnail', 926, 389, true);
+                add_image_size('post-thumbnail-headlihe-image-thumbnail', 219, 115, true);
+				//federaciones
+                add_image_size('post-thumbnail-federaciones-image', 75, 100, true);
         }
 }
 
