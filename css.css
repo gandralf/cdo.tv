@@ -469,7 +469,9 @@ img{
 /* MULTMIDIA */
 .multimidia{
 	padding-bottom:40px;
-	float:left
+	/* float:left;  */
+	width: 926px;
+	margin: auto;
 }
 
 .multimidia h2{
