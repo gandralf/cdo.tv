@@ -64,7 +64,7 @@ Calendar = {
 				}
 				
 				if(Utils.date.getHours(startRw) != Utils.date.getHours(endOld)){//se horário inicial da atividade atual não igual ao horário final da atividade anterior
-					tr.append(this.activity.create(endOld, startRw, "Sem programação"));//horário sem programação
+					tr.append(this.activity.create(endOld, startRw, "Sin programación"));//horário sem programação
 				}
 				
 				if(startRw < endRw){//se horário inicial menor q horário final
@@ -80,7 +80,7 @@ Calendar = {
 		if(Utils.date.getHours(endOld) != "00:00"){
 			var endHours = new Date();
 			endHours.setHours(0,0);
-			tr.append(this.activity.create(endOld, Utils.date.addDays(endHours,1), "Sem programação"));
+			tr.append(this.activity.create(endOld, Utils.date.addDays(endHours,1), "Sin programación"));
 		}
 		
 		$(this.table).append(tr);
