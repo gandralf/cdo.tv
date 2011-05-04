@@ -102,7 +102,7 @@ echo $message;
 			<ul>
 					<li><a href="quienessomos.html" target='_self'>¿Quienes somos?</a></li>
 				<li><a href="mision.html" target='_self'>Misión</a></li>
-				<li><a href="equipo.html"target='_self'>Equipo</a></li>
+				<!-- <li><a href="equipo.html"target='_self'>Equipo</a></li> -->
 			  <li><a href="contacto.html" target='_self'>Contacto</a></li>
 			</ul>
 	  </div>
