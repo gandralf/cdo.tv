@@ -4,6 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>CDO - Canal Deporte Olimpico</title>
 <link href="css.css" rel="stylesheet" type="text/css" />
+<link href="css/ui-lightness/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css" />
+
 <style type="text/css">
 <!--
 
@@ -40,15 +42,15 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
     
     
       <div id="carrocel"> 
-        <div align="center">
+        
 			<div class="programacion">
 			    <div class="box_type_programacion">
-					<h2 class="dia_actual">3 May</h2>
+					<input class="dia_actual"type="text" name="dia_actual" id="dia_actual" />
 
 					<div class="logoProgramacion">
-						<div class="logo"><span class="logo_cdo"><a href="#">Canal Deporte Olimpico</a></span></div>
+						<!--div class="logo"><span class="logo_cdo"><a href="#">Canal Deporte Olimpico</a></span></div-->
 						<div class="logo"><span class="logo_cdo_premium"><a href="#">Canal Deporte Olimpico Premium</a></span></div>
-						<div class="logo"><span class="logo_cdo_radio"><a href="#">Canal Deporte Olimpico Radio</a></span></div>
+						<!--div class="logo"><span class="logo_cdo_radio"><a href="#">Canal Deporte Olimpico Radio</a></span></div-->
 					</div>
 
 				</div>
@@ -81,16 +83,9 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
 					</div>
 
 					<span class="bt_proxima"><a href="#">Proxima</a></span>
-				</div>
-			</div>
+				</div>			
         </div>
-        
-        <div id="videos">
-          <div align="center"><br />
-            <br />
-          </div>
     
-        </div>
       </div>
     </div>
   </div>
@@ -129,13 +124,15 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
 	</div>
 </div>
 
-<!-- 			footer -->
+<!-- footer -->
 <script type="text/javascript" src="js/jquery.min.1.5.2.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
 <script type="text/javascript" src="js/calendar.js"></script>
+
 <!-- ><script src="http://www.google.com/calendar/feeds/cdo.tv.teste@gmail.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script> -->
-<script src="http://www.google.com/calendar/feeds/contenido@cdo.tv/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
-<script src="http://www.google.com/calendar/feeds/loa1t9pmcddfb2ktbdq5q4c17k@group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
-<script src="http://www.google.com/calendar/feeds/poaaqbb8quj5n28fo7e6q26itk@group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&callback=listEvents"></script>
+<script type="text/javascript">
+	loadScriptCalendar(new Date());
+</script>
 
 </body>
 </html>

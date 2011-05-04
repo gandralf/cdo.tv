@@ -1,26 +1,50 @@
 ﻿function listEvents(root) {
     var feed = root.feed,
-		entries = feed.entry || [],
-		today = new Date();
+		entries = feed.entry || [];
 	
 	entries = entries.reverse();
 	
 	Calendar.createHours();
 	Calendar.create(entries);
-	
-    console.log(feed);
 }
 
 $(function(){
+
+	$("#dia_actual").datepicker();
+	$("#dia_actual").datepicker("setDate", new Date());
 	
-	
+	$("#dia_actual").change(function(){
+		loadScriptCalendar(new Date($(this).val()));
+	});
 	
 });
+
+
+function loadScriptCalendar(date){
+	var minDate = Utils.date.getDate(Utils.date.lessDays(date,1))+ "T23:59:59",
+		maxDate = Utils.date.getDate(date)+ "T23:59:59",
+		url = "http://www.google.com/calendar/feeds/[ID_CALENDAR]/public/full?alt=json-in-script&orderby=starttime&start-min="+minDate+"&start-max="+maxDate+"&callback=listEvents",
+		idDefault = "contenido@cdo.tv",
+		idPremium = "loa1t9pmcddfb2ktbdq5q4c17k@group.calendar.google.com",
+		idRadio = "poaaqbb8quj5n28fo7e6q26itk@group.calendar.google.com",
+		urlDefault = url.replace(/\[ID_CALENDAR\]/g, idDefault),
+		urlPremium = url.replace(/\[ID_CALENDAR\]/g, idPremium),
+		urlRadio = url.replace(/\[ID_CALENDAR\]/g, idRadio);
+		
+		Calendar.table.empty();
+		Calendar.endOld = date;
+		
+		//document.write("<script src='" + urlDefault + "' ><\/script>");
+		$("head").append("<script src='" + urlPremium + "' ><\/script>");
+		//document.write("<script src='" + urlRadio + "' ><\/script>");
+}
+
 
 Calendar = {
 	table : $("#tblAgenda"),
 	hours : $(".box_grade_programacion ul"),
 	programacion : $(".box_programacion"),
+	endOld : null,
 	
 	createHours: function(){
 		
@@ -42,9 +66,8 @@ Calendar = {
 	},
 	
 	create: function(entries){
-		var today = new Date(),
-			tr = $('<tr/>'),
-			endOld = new Date();
+		var tr = $('<tr/>'),
+			endOld = this.endOld;
 		
 		endOld.setHours(0,0);
 		
@@ -54,8 +77,8 @@ Calendar = {
 				when = entry['gd$when'],
 				start = (when) ? Utils.date.newPortableDate(entry['gd$when'][0].startTime) : "",
 				end = (when) ? Utils.date.newPortableDate(entry['gd$when'][0].endTime) : "";
-			
-			if(Utils.date.equalDate(start, today)) {
+		
+			//if(Utils.date.equalDate(start, today)) {
 				var startRw = start,
 					endRw = end;
 					
@@ -74,7 +97,7 @@ Calendar = {
 				if(endOld < end){//se horário final da atividade anterior for menor q horário final da atual atividade
 					endOld = end;//sobrescreve horário final anterior
 				}
-			}
+			//}
 		}
 		
 		if(Utils.date.getHours(endOld) != "00:00"){
@@ -84,7 +107,6 @@ Calendar = {
 		}
 		
 		$(this.table).append(tr);
-		
 		this.galery.create();
 	},
 	
@@ -99,13 +121,14 @@ Calendar = {
 			var tag = tt[0],
 				name = tt[1],
 				subject = tt[2];
-			*/	
+			*/
+			
 			var width = this.getWidth(start, end),
 				activity = ['<span>', title, '</span>'].join(""),
 				td = $('<td/>');
 				
 				td.append(activity).css({width: width});
-				
+			
 			return td;
 		},
 		
@@ -200,12 +223,26 @@ Utils = {
 			return (hour +":"+ minutes);
 		},
 		
+		getDate: function(date){
+			var year = date.getFullYear(),
+				month = (date.getMonth()+1 < 10) ? "0" + (date.getMonth()+1) : (date.getMonth()+1),
+				day = (date.getDate() < 10) ? "0" + date.getDate() : date.getDate();
+			
+			return (year +"-"+ month +"-"+ day);
+		},
+		
 		addDays: function(date, qtd){
 			var dateNew = new Date(date.getTime() + (qtd * 24 * 60 * 60000));
 			
 			return (dateNew);
 		},
-	
+		
+		lessDays: function(date, qtd){
+			var dateNew = new Date(date.getTime() - (qtd * 24 * 60 * 60000));
+			
+			return (dateNew);
+		},
+		
 		newPortableDate: function(str){
 			var dta = str.substr(0, 10).split('-');
 			var hr = str.substr(11, 8).split(':');

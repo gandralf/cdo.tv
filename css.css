@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body {
-	background: #000 url(images/bgNovo.jpg) repeat-x ;
+	background: #000 url(images/bgNovo.jpg) repeat-x;
+	font-family: Arial;
+	font-size:12px
 }
 img{
 	border:none;
@@ -112,6 +114,7 @@ img{
 	background-image: url(images/bgfooter.png);
 	background-repeat: repeat-x;
 	height: 215px;
+	clear:both
 }
 #footer .content{
 	width: 925px;
@@ -245,6 +248,7 @@ img{
 /* PROGRAMACION */
 .programacion{
     float:left;width:100%;padding:20px 0;
+	margin-left: 50px;
 }
 
 .dia_actual{
@@ -256,6 +260,7 @@ img{
     margin: 0;
     padding: 20px 10px;
     width: 153px;
+	border:0;
 }
 
 .box_grade_programacion{
@@ -278,6 +283,7 @@ img{
     height:61px; 
     background-image:url("images/sprite.png");
 	background-position:0 0;
+	outline:none
 }
 
 .box_programacion .bt_proxima a{
@@ -379,17 +385,28 @@ img{
    height: 146px;
 }
 
-.box_type_programacion .logo_cdo_radio a,
-.box_type_programacion .logo_cdo_premium a,
-.box_type_programacion .logo_cdo a,
-.box_type_programacion .logo_cdo_radio,
-.box_type_programacion .logo_cdo_premium,
-.box_type_programacion .logo_cdo{
-    background:url("images/sprite.png") repeat scroll left -136px transparent;
+.box_type_programacion .logo_cdo_radio ,
+.box_type_programacion .logo_cdo_premium ,
+.box_type_programacion .logo_cdo {
+    background-image:url("images/sprite.png");
+	background-repeat:repeat;
     width:156px;
     height:70px;
     text-indent:-9000px;
     float:left;
+}
+.box_type_programacion .logo_cdo {
+	background-position:left -136px;
+}
+.box_type_programacion .logo_cdo_premium,
+.box_type_programacion .logo_cdo_radio {
+	height:74px;
+}
+.box_type_programacion .logo_cdo_premium {
+	background-position:left -209px;
+}
+.box_type_programacion .logo_cdo_radio {
+	background-position:left -290px;
 }
 
 .box_programacion{
