@@ -32,79 +32,91 @@ img{
 }
 #videos {
 }
+
+/* Federaciones */
+
 #federaciones {
+
 }
 
 #federaciones div {
 	display:inline-block;
-	width: 114px;
+	width: 184px;
 	height: 114px;
 	background-image: url(images/federaciones.png);
-}
 
-#federaciones #fed_ado {
-	background-position: 0px 114px;
-}
-
-#federaciones #fed_ado:hover {
-	background-position: 0px 0px;
 }
 
 #federaciones #fed_coch {
-	background-position: -116px 114px;
+	background-position: 1px 114px;
 }
 
 #federaciones #fed_coch:hover {
-	background-position: -116px 0px;
+	background-position: 1px 0px;
+}	
+
+
+#federaciones #fed_ado {
+	background-position: -183px 114px;
 }
 
+#federaciones #fed_ado:hover {
+	background-position: -183px 0px;
+}
+
+
+
 #federaciones #fed_basket {
-	background-position: -230px 114px;
+	background-position: -368px 114px;
 }
 
 #federaciones #fed_basket:hover {
-	background-position: -230px 0px;
+	background-position: -368px 0px;
 }
 
-#federaciones #fed_handball {
+/*#federaciones #fed_handball {
 	background-position: -343px 114px;
-}
+}*/
 
-#federaciones #fed_handball:hover {
+/*#federaciones #fed_handball:hover {
 	background-position: -343px 0px;
-}
+}*/
 
-#federaciones #fed_rugby {
-	background-position: -460px 114px;
-}
-
-#federaciones #fed_rugby:hover {
-	background-position: -460px 0px;
-}
-
-#federaciones #fed_hokey {
-	background-position: -577px 114px;
-}
-
-#federaciones #fed_hokey:hover {
-	background-position: -577px 0px;
-}
 
 #federaciones #fed_voley {
-	background-position: -693px 114px;
+	background-position: -554px 114px;
 }
 
 #federaciones #fed_voley:hover {
-	background-position: -693px 0px;
+	background-position: -554px 0px;
 }
 
-#federaciones #fed_liga {
+#federaciones #fed_rugby {
+	background-position: -740px 114px;
+}
+
+#federaciones #fed_rugby:hover {
+	background-position: -740px 0px;
+}
+
+/*#federaciones #fed_hokey {
+	background-position: -577px 114px;
+}*/
+
+/*#federaciones #fed_hokey:hover {
+	background-position: -577px 0px;
+}
+
+
+/*#federaciones #fed_liga {
 	background-position: -810px 114px;
-}
+}/*
 
-#federaciones #fed_liga:hover {
+/*#federaciones #fed_liga:hover {
 	background-position: -810px 0px;
-}
+}/*
+
+/* Federaciones */
 
 #conteudo {
 }
