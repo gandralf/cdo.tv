@@ -266,6 +266,7 @@ img{
 	display: block;
     height: 60px;
     position: relative;
+	margin-bottom: 5px;
 }
 .dia_actual_container img{
 	position:absolute;
@@ -387,6 +388,7 @@ img{
 .box_programacion_detalhe table tr,
 .box_programacion_detalhe table td{
     height:146px;
+	overflow:hidden
 }
 .box_programacion_detalhe table td{
     background-color:#323232;
@@ -402,7 +404,8 @@ img{
 .box_type_programacion .logoProgramacion{
     width:173px;    
     margin:0;
-	clear:both
+	clear:both;
+	height:148px;
 }
 .box_type_programacion .logoProgramacion .logo{
    height: 146px;
@@ -446,7 +449,7 @@ img{
 .logoProgramacion span{
     position: relative;
     left:10%;
-    top: 50%;
+    top:45px;
 }
 .box_programacion_detalhe .descProgramacion{
     position: relative;
