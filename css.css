@@ -556,7 +556,10 @@ h2.tit-videos{background-position: 20px -67px}
 	padding:10px 8px;
 }
 .multimidia-list img{
-	margin-bottom:32px
+	margin-bottom:32px;
+	width: 215px;
+	height: 130px;
+	overflow: hidden;
 }
 .multimidia-list a{
 	color: #CE3132;
