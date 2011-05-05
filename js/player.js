@@ -1,34 +1,16 @@
-
-Player = {
-	table : "",
-	
-	onPlayerReady: function(playerId){
-		ytplayer = document.getElementById("myytplayer");
-	},
-	
-	onPlayerStateChange: function(newState){
-		alert("Player's new state: " + newState);
-	}
-}
-
 $(function(){
 	var player = new Player($("#playerVideo"));
 	player.init("PJNEoFHVDTg");
 	
 	$(".videos-destaque a").click(function(){
 		var id = $(this).attr("href").split("#")[1];
-		
-		console.log(id);
 		player.init(id);
-		
 	});
 	
 })
 
 
 _PLAYER_CURRENT = null;
-
-var openedPlayers = new Array();
 
 Player = function(elem, width, height){
 	this.elem = elem;
@@ -97,16 +79,4 @@ Player = function(elem, width, height){
 function onYouTubePlayerReady(playerId){
 	_PLAYER_CURRENT.player = $("#"+ playerId).get(0);
 	_PLAYER_CURRENT.execMetodos();
-	
-	openedPlayers.push(playerId);
-}
-
-function clearPlayer(){
-	for(var i=openedPlayers.length-1; i>=0; i--){
-		try {
-			$('#'+openedPlayers[i]).get(0).stopVideo();
-			$('#'+openedPlayers[i]).get(0).clearVideo();
-		} catch(e) {}
-		openedPlayers.pop();
-	};
 }
