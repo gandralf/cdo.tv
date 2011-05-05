@@ -582,9 +582,50 @@ h2.tit-videos{background-position: 20px -67px}
 	float:left
 }
 /* MULTMIDIA */
+
 .highlight-list-item-off-home {
     background-image: url("images/backgound-highlight-off.png");
 }
 .highlight-list-item-on-home {
     background-image: url("images/backgound-highlight-on.png");
 }
+
+/* NOTÍCIA */
+
+#content-noticia{
+	width: 898px;
+	margin: 14px auto;
+	background:#252525;
+	padding:15px 1.5%;
+	color:#e0e0e0;
+	font-size:13px;
+	overflow:hidden
+}
+
+#content-noticia h2{
+	font-size:30px;
+	font-weight:normal;
+	margin:0
+}
+
+#content-noticia .subtitle{
+	font-weight:bold;
+	margin:5px 0;
+	font-size:12px;
+}
+
+#content-noticia .published{
+	background:#323232;
+	padding:5px 10px;
+	margin:12px 0 20px
+}
+#content-noticia .published .date-published{
+	color:#dc251d;
+	font-size:11px;
+	margin-bottom:2px
+}
+#content-noticia .image-noticia{
+	float:left;
+	margin:0 15px 10px 0
+}
+/* NOTÍCIA */
