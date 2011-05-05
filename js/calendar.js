@@ -73,11 +73,11 @@ Calendar = {
 	
 	createHours: function(){
 		
-		var htmlTpl = '<li><div><h3>[HOUR]:00 pm</h3>'+
-								'<span>[HOUR]:00 pm</span>'+
-								'<span>[HOUR]:15 pm</span>'+
-								'<span>[HOUR]:30 pm</span>'+
-								'<span>[HOUR]:45 pm</span>'+
+		var htmlTpl = '<li><div align="center"><h3>[HOUR]:00</h3>'+
+								'<span>[HOUR]:00</span>'+
+								'<span>[HOUR]:15</span>'+
+								'<span>[HOUR]:30</span>'+
+								'<span>[HOUR]:45</span>'+
 						'</div>'+
 						'<span class="bottom">&nbsp;</span>'+
 					'</li>';
