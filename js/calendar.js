@@ -9,8 +9,32 @@
 }
 
 $(function(){
+	
+	$.datepicker.regional['es'] = {
+		closeText: 'Cerrar',
+		prevText: '&#x3c;Ant',
+		nextText: 'Sig&#x3e;',
+		currentText: 'Hoy',
+		monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+		monthNamesShort: ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'],
+		dayNames: ['Domingo','Lunes','Martes','Mi&eacute;rcoles','Jueves','Viernes','S&aacute;bado'],
+		dayNamesShort: ['Dom','Lun','Mar','Mi&eacute;','Juv','Vie','S&aacute;b'],
+		dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','S&aacute;'],
+		weekHeader: 'Sm',
+		dateFormat: 'd M yy',
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ''};
+	
+	$.datepicker.setDefaults($.datepicker.regional['es']);
 
-	$("#dia_actual").datepicker();
+	$("#dia_actual").datepicker({
+		showOn: "button",
+		buttonImage: "images/calendar.gif",
+		buttonImageOnly: true
+	});
+
 	$("#dia_actual").datepicker("setDate", new Date());
 	
 	$("#dia_actual").change(function(){
@@ -21,9 +45,9 @@ $(function(){
 
 
 function loadScriptCalendar(date){
-	var minDate = Utils.date.getDate(Utils.date.lessDays(date,1))+ "T23:59:59",
-		maxDate = Utils.date.getDate(date)+ "T23:59:59",
-		url = "http://www.google.com/calendar/feeds/[ID_CALENDAR]/public/full?alt=json-in-script&orderby=starttime&start-min="+minDate+"&start-max="+maxDate+"&callback=listEvents",
+	var minDate = Utils.date.getDate(Utils.date.lessDays(date,1))+ "T21:00:00",
+		maxDate = Utils.date.getDate(Utils.date.addDays(date,1))+ "T03:00:00",
+		url = "http://www.google.com/calendar/feeds/[ID_CALENDAR]/public/full?alt=json-in-script&orderby=starttime&start-min="+minDate+"&start-max="+maxDate+"&max-attendees=40&callback=listEvents&ram="+ Math.random(),
 		idDefault = "contenido@cdo.tv",
 		idPremium = "loa1t9pmcddfb2ktbdq5q4c17k@group.calendar.google.com",
 		idRadio = "poaaqbb8quj5n28fo7e6q26itk@group.calendar.google.com",
@@ -32,7 +56,7 @@ function loadScriptCalendar(date){
 		urlRadio = url.replace(/\[ID_CALENDAR\]/g, idRadio);
 		
 		Calendar.table.empty();
-		Calendar.endOld = date;
+		Calendar.dateActive = date;
 		
 		//document.write("<script src='" + urlDefault + "' ><\/script>");
 		$("head").append("<script src='" + urlPremium + "' ><\/script>");
@@ -44,7 +68,7 @@ Calendar = {
 	table : $("#tblAgenda"),
 	hours : $(".box_grade_programacion ul"),
 	programacion : $(".box_programacion"),
-	endOld : null,
+	dateActive : null,
 	
 	createHours: function(){
 		
@@ -60,14 +84,13 @@ Calendar = {
 		this.hours.empty();
 		
 		for (var i = 0; i <= 23; ++i) {
-			
 			this.hours.append(htmlTpl.replace(/\[HOUR\]/g,i));
 		}
 	},
 	
 	create: function(entries){
 		var tr = $('<tr/>'),
-			endOld = this.endOld;
+			endOld = this.dateActive;
 		
 		endOld.setHours(0,0);
 		
@@ -77,8 +100,8 @@ Calendar = {
 				when = entry['gd$when'],
 				start = (when) ? Utils.date.newPortableDate(entry['gd$when'][0].startTime) : "",
 				end = (when) ? Utils.date.newPortableDate(entry['gd$when'][0].endTime) : "";
-		
-			//if(Utils.date.equalDate(start, today)) {
+			
+			if(Utils.date.equalDate(start, this.dateActive)) {
 				var startRw = start,
 					endRw = end;
 					
@@ -97,11 +120,11 @@ Calendar = {
 				if(endOld < end){//se horário final da atividade anterior for menor q horário final da atual atividade
 					endOld = end;//sobrescreve horário final anterior
 				}
-			//}
+			}
 		}
 		
 		if(Utils.date.getHours(endOld) != "00:00"){
-			var endHours = new Date();
+			var endHours = new Date(endOld);
 			endHours.setHours(0,0);
 			tr.append(this.activity.create(endOld, Utils.date.addDays(endHours,1), "Sin programación"));
 		}
@@ -122,7 +145,7 @@ Calendar = {
 				name = tt[1],
 				subject = tt[2];
 			*/
-			
+
 			var width = this.getWidth(start, end),
 				activity = ['<span>', title, '</span>'].join(""),
 				td = $('<td/>');

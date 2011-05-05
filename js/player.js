@@ -1,26 +1,10 @@
-
-Player = {
-	table : "",
-	
-	onPlayerReady: function(playerId){
-		ytplayer = document.getElementById("myytplayer");
-	},
-	
-	onPlayerStateChange: function(newState){
-		alert("Player's new state: " + newState);
-	}
-}
-
 $(function(){
 	var player = new Player($("#playerVideo"));
 	player.init("PJNEoFHVDTg");
 	
 	$(".videos-destaque a").click(function(){
 		var id = $(this).attr("href").split("#")[1];
-		
-		console.log(id);
 		player.init(id);
-		
 	});
 	
 })
