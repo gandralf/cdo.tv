@@ -443,11 +443,30 @@ img{
     padding:0;
 }
 
-.box_programacion_detalhe span, .logoProgramacion span{
+.logoProgramacion span{
     position: relative;
     left:10%;
     top: 50%;
 }
+.box_programacion_detalhe .descProgramacion{
+    position: relative;
+    left:10%;
+    top: 15%;
+	width: 90%;
+}
+.box_programacion_detalhe .descProgramacion .tag{
+	font-size:12px;
+	color:#666;
+	font-weight: bold;
+}
+.box_programacion_detalhe .descProgramacion h3{
+	font-size:18px;
+	margin:2px 0 5px
+}
+.box_programacion_detalhe .descProgramacion .subject{
+	font-size:12px
+}
+
 .box_programacion_detalhe .prog_1{
     width:56px;
 }

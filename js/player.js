@@ -12,8 +12,6 @@ $(function(){
 
 _PLAYER_CURRENT = null;
 
-var openedPlayers = new Array();
-
 Player = function(elem, width, height){
 	this.elem = elem;
 	this.player = null;
@@ -81,16 +79,4 @@ Player = function(elem, width, height){
 function onYouTubePlayerReady(playerId){
 	_PLAYER_CURRENT.player = $("#"+ playerId).get(0);
 	_PLAYER_CURRENT.execMetodos();
-	
-	openedPlayers.push(playerId);
-}
-
-function clearPlayer(){
-	for(var i=openedPlayers.length-1; i>=0; i--){
-		try {
-			$('#'+openedPlayers[i]).get(0).stopVideo();
-			$('#'+openedPlayers[i]).get(0).clearVideo();
-		} catch(e) {}
-		openedPlayers.pop();
-	};
 }

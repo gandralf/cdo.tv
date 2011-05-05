@@ -5,6 +5,7 @@
 	entries = entries.reverse();
 	
 	Calendar.createHours();
+	Calendar.galery.reset();
 	Calendar.create(entries);
 }
 
@@ -86,6 +87,8 @@ Calendar = {
 		for (var i = 0; i <= 23; ++i) {
 			this.hours.append(htmlTpl.replace(/\[HOUR\]/g,i));
 		}
+		
+		this.galery.create();
 	},
 	
 	create: function(entries){
@@ -130,7 +133,6 @@ Calendar = {
 		}
 		
 		$(this.table).append(tr);
-		this.galery.create();
 	},
 	
 	activity: {
@@ -139,15 +141,14 @@ Calendar = {
 		minute: 60,
 		
 		create: function(start, end, title){
-			/* // to-do: separar e exibir os componentes do titulo 
+			// to-do: separar e exibir os componentes do titulo 
 			var tt = title.split(/\s+\/\s+/g); // Exemplo de titulo "Futebol / Campeonato Paulista / Corintias x Santos"
 			var tag = tt[0],
 				name = tt[1],
 				subject = tt[2];
-			*/
 
 			var width = this.getWidth(start, end),
-				activity = ['<span>', title, '</span>'].join(""),
+				activity = ['<div class="descProgramacion"><span class="tag">', tag,'</span><h3>',name,'</h3><span class="subject">',subject, '</span></div>'].join(""),
 				td = $('<td/>');
 				
 				td.append(activity).css({width: width});
@@ -214,6 +215,16 @@ Calendar = {
 			if(self.flagAnimate){
 				self.flagAnimate = false;
 				this.mask.animate({left:left}, "fast", function(){
+					self.flagAnimate = true;
+				});
+			}
+		},
+		reset: function(){
+			var self = this;
+				
+			if(self.flagAnimate){
+				self.flagAnimate = false;
+				this.mask.animate({left:0}, "fast", function(){
 					self.flagAnimate = true;
 				});
 			}
