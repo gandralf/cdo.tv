@@ -19,7 +19,7 @@
         <div id="container">
             <!-- HEADER -->
             <div id="header">
-                <h1 class="logo">CDO - CANAL DEPORTE OLIMPICO</h1>
+                <h1 class="logo"><a href="/" title="CDO - CANAL DEPORTE OLIMPICO">CDO - CANAL DEPORTE OLIMPICO</a></h1>
                 <!-- BANNER -->
                 <div class="banner">
                 <?php banner(); ?>

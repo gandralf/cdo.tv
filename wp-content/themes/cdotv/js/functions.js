@@ -126,8 +126,11 @@ $(function(){
             if(data_length > 1) interval = setInterval(changeCarousel, time);
         }
     };
-    $('#carousel_here').carouselSlide({time: 2, fade: true, data: dataCarousel});
-    
+	
+	if(typeof dataCarousel != 'undefined'){
+		$('#carousel_here').carouselSlide({time: 2, fade: true, data: dataCarousel});
+    }
+	
     $.fn.underlineText = function(clazz) {
     	this.bind('mouseenter mouseleave', function() {
     		if ($(this).hasClass(clazz)) {

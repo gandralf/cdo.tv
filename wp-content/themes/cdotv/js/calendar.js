@@ -7,15 +7,7 @@
 	
 	Calendar.createHours();
 	Calendar.create(entries);
-	
-    console.log(feed);
 }
-
-$(function(){
-	
-	
-	
-});
 
 Calendar = {
 	table : $("#tblAgenda"),
@@ -53,9 +45,9 @@ Calendar = {
 				title = entry.title.$t,
 				when = entry['gd$when'],
 				start = (when) ? new Date(entry['gd$when'][0].startTime) : "",
-				end = (when) ? new Date(entry['gd$when'][0].endTime) : "";
+				end = (when) ? new Date(entry['gd$when'][0].endTime) : "";			
 			
-			if(Utils.date.equalDate(start, today)) {
+			//if(Utils.date.equalDate(start, today)) {
 				var startRw = start,
 					endRw = end;
 					
@@ -74,7 +66,7 @@ Calendar = {
 				if(endOld < end){//se horário final da atividade anterior for menor q horário final da atual atividade
 					endOld = end;//sobrescreve horário final anterior
 				}
-			}
+			//}
 		}
 		
 		if(Utils.date.getHours(endOld) != "00:00"){
@@ -179,12 +171,11 @@ Utils = {
 	date: {
 		
 		equalDate: function(firstDate, secondDate){
-			
 			var isEqualDate = (firstDate.getDate() == secondDate.getDate()),
 				isEqualMonth = (firstDate.getMonth() == secondDate.getMonth()),
 				isEqualYear = (firstDate.getFullYear() == secondDate.getFullYear());
 			
-			return (isEqualDate && isEqualMonth && isEqualYear);		
+			return (isEqualDate && isEqualMonth && isEqualYear);
 		},
 		
 		getHours: function(date){
