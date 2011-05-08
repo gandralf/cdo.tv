@@ -1,6 +1,6 @@
 $(function(){
 	var player = new Player($("#playerVideo"));
-	player.init("PJNEoFHVDTg");
+	player.init("23347055", true);
 	
 	$(".videos-destaque a").click(function(){
 		var id = $(this).attr("href").split("#")[1];
@@ -20,16 +20,23 @@ Player = function(elem, width, height){
 	this.w = width ? width : 520;
 	this.h = height ? height : 275;
 	
-	this.init = function(videoID){			
+	this.init = function(videoID, stopped){
 		this.videoID = videoID;
 		var divPlay = this.elem;
-		var id = $(divPlay).attr("id");
+		var playNow = stopped ? "" : ";autoplay=1";
+		var url = "http://player.vimeo.com/video/" + videoID + 
+			"?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp" + playNow;
+		var iframe = '<iframe src="' + url + '" width="520" height="275" frameborder="0"></iframe>';
+		divPlay.html(iframe);
+		// var id = $(divPlay).attr("id");
 
 		_PLAYER_CURRENT = this;
-
+		
+		/*
         var params = { allowScriptAccess: "always", bgcolor:"#000000", wmode:"transparent" };
         var atts = { id: id};
         swfobject.embedSWF("http://www.youtube.com/v/"+ this.videoID +"&enablejsapi=1&playerapiid="+id, id, this.w, this.h, "9", null, null, params, atts);
+		*/
 	}
 	this.play = function(){
 		if(this.isApiplayerEnable(this.play)){
