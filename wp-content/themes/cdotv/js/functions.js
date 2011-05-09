@@ -1,20 +1,18 @@
-function prepareMouseOverImage(image, originalURL)
-{
+function prepareMouseOverImage(image, originalURL){
 	image.mouseOverImage=originalURL;
 	image.onload=function(){return true;};
 	image.normalImage=grayscale(image, false);
+	
+	$(image).parent().mouseover(function(){
+		var img = $(this).find("img");
+		img.attr("src", img.get(0).mouseOverImage);
+	})
 
-	image.onmouseover=function()
-	{
-	//alert("a");
-		this.src=this.mouseOverImage;
-	}
-
-	image.onmouseout=function()
-	{
-//	alert(this.normalImage.src);
-		this.src=this.normalImage;
-	}
+	$(image).parent().mouseout(function(){
+		var img = $(this).find("img");
+		img.attr("src", img.get(0).normalImage);
+	})
+	
 	image.src=image.normalImage;
 }
 
@@ -29,7 +27,7 @@ function grayscale(image, bPlaceImage)
   // You'll get some string error if you fail to specify the dimensions
   myCanvas.width= imgWidth;
   myCanvas.height=imgHeight;
-//  alert(imgWidth);
+// alert(imgWidth);
   myCanvasContext.drawImage(image,0,0);
 
   // The getImageData() function cannot be called if the image is not from the same domain.

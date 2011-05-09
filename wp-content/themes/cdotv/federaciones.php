@@ -1,5 +1,4 @@
 <div id="federaciones">
-	<h3 class="label-federaciones"><img src="<?php echo bloginfo('template_url');?>/images/img-label-federaciones.png" /></h3>
 	<div align="center">
 		 <?php
 	        $args = array('post_type' => 'federaciones',

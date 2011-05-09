@@ -152,7 +152,7 @@ if(function_exists('add_theme_support')){
                 ));
 				//federaciones
                 new MultiPostThumbnails(array(
-                        'label' => 'Thumbnail Federaciones (100x75)',
+                        'label' => 'Thumbnail Federaciones (70x70)',
                         'id' => 'thumbnail-federaciones-image',
                         'post_type' => 'federaciones'
                 ));
@@ -170,7 +170,7 @@ if(function_exists('add_theme_support')){
                 add_image_size('post-headline-image-thumbnail', 926, 389, true);
                 add_image_size('post-thumbnail-headlihe-image-thumbnail', 219, 115, true);
 				//federaciones
-                add_image_size('post-thumbnail-federaciones-image', 75, 100, true);
+                add_image_size('post-thumbnail-federaciones-image', 70, 70, true);
         }
 }
 

@@ -62,8 +62,10 @@
 	$maxDate = date("Y-m-d")."T23:59:59";
 	$url = "http://www.google.com/calendar/feeds/[ID_CALENDAR]/public/full?alt=json-in-script&orderby=starttime&start-min=".$minDate."&start-max=".$maxDate."&callback=listEvents";
 	
-	$idDefault = "contenido@cdo.tv"; //calendario Default
+	//$idDefault = "contenido@cdo.tv"; //calendario Default
+	$idDefault = "cdo.tv.teste@gmail.com"; //calendario Default
 	$idPremium = "loa1t9pmcddfb2ktbdq5q4c17k@group.calendar.google.com"; //calendario Premium
+	//$idPremium = "ou1nimde2qlqaimidulmu1feos@group.calendar.google.com"; //calendario Premium
 	$idRadio = "poaaqbb8quj5n28fo7e6q26itk@group.calendar.google.com"; //calendario Radio
 	
 	$urlDefault = str_replace("[ID_CALENDAR]", $idDefault, $url);

@@ -47,6 +47,8 @@ Calendar = {
 				start = (when) ? Utils.date.newPortableDate(entry['gd$when'][0].startTime) : "",
 				end = (when) ? Utils.date.newPortableDate(entry['gd$when'][0].endTime) : "";
 			
+			console.log(entry['gd$when'][0].startTime, entry['gd$when'][0].endTime);
+			
 			//if(Utils.date.equalDate(start, today)) {
 				var startRw = start,
 					endRw = end;

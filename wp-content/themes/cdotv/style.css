@@ -26,24 +26,26 @@ img{
     float:left;width:100%;
 }
 #header{
-    margin:21px 0 0 0;
+    margin:10px 0 0 0;
 }
-#menu{
-}
-h1.logo{
-    background: url(images/logo.png) no-repeat 0 0;
+
+h1.logo, h1.logo a{
     width:295px;
     height:135px;
+	float:left;
+	margin:0
+}
+h1.logo a{
+    background: url(images/logo.png) no-repeat 0 0;
     text-indent:-9000px;
-    float:left;
-    margin:0;
+	margin:0 0 0 5px;
 }
 .banner{
     float:left;
-    width:615px;
+    width:594px;
     overflow:hidden;
     height:115px;
-    margin:15px 0 0 15px;
+    margin:18px 0 0 22px;
     text-align:right;
 }
 .banner img{
@@ -118,35 +120,35 @@ h1.logo{
         margin: 10px;
 }
 #carousel_here .thumbs{
-        width: 100%;
-        height: 120px;
-        vertical-align: bottom;
-        margin: 0;
-        padding: 0;
-        float: left;
+	width: 100%;
+	height: 120px;
+	vertical-align: bottom;
+	margin: 0;
+	padding: 0;
+	float: left;
 }
 #carousel_here .thumbs li{
-        list-style: none;
-        float: left;
-        margin-left: 25px;
-        position: relative;
-        width: 200px;
-        height: 90px;
-        background-color: #000000;
-        cursor: pointer;
+	list-style: none;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	width: 219px;
+	height: 115px;
+	cursor: pointer;
+	padding:0
 }
 #carousel_here .thumbs .actual{
-        background: url(images/hover_headline_thumb.png) repeat top left transparent;
-        height: 10px;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        text-indent: -9999px;
+	background: url(images/hover_headline_thumb.png) repeat top left transparent;
+	height: 10px;
+	width: 198px;
+	position: absolute;
+	left: 11px;
+	bottom: 20px;
+	text-indent: -9999px;
 }
 #carousel_here .thumbs li img{
-        width: 200px;
-        height: 90px;
+    width: 219px;
+    height: 115px;
 }
 
 #videos_content {
@@ -560,28 +562,30 @@ span.menu-button-decoration {
 }
 
 .panel-thumbnail-federaciones {
-	background-image: url("images/background-federaciones.png");
-	background-repeat: repeat-x;
 	margin: 0;
-	padding: 0 0 0 2px;
+	padding: 20px 0 0 2px;
 	height: 160px;
 	width: 926px;
 }
-
 .panel-thumbnail-federaciones li {
 	list-style: none;
 	display: block;
-	margin: 38px 0 0 0;
-	height: 115px;
-	width: 77px;
+	margin: 0 5px 0 0;
 	padding: 0px;
 	float: left;
 }
-
+.panel-thumbnail-federaciones a{
+	background-image: url("images/background-federaciones.png");
+	background-repeat: repeat-x;
+	height: 95px;
+	width: 180px;
+	padding-top:20px;
+	display:block
+}
 .panel-thumbnail-federaciones li img{
 	margin-top: 0px;
-	width: 75px;
-	height: 105px;
+	width: 70px;
+	height: 70px;
 }
 /* PROGRAMACION */
 .programacion{
