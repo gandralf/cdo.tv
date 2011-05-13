@@ -651,3 +651,78 @@ h2.tit-videos{background-position: 20px -67px}
 	margin:0 15px 10px 0
 }
 /* NOTÍCIA */
+
+/* NOTÍCIAS */
+div.news {
+	padding-bottom:40px;
+	width: 926px;
+	margin: auto;
+}
+
+
+.highlight-list-home {
+	height: 290px;
+	width: 926px;
+	margin: 0;
+	padding: 0;
+	margin: 20px 0 5px;
+}
+
+.highlight-list-home a {
+	text-decoration: none;
+}
+
+.highlight-list-home li {
+	display: block;
+	margin: 0px 0px 0px 0px;
+	background-repeat: repeat-x;
+/*	height: 290px; */
+	height: 340px;
+	width: 308px;
+	float: left;
+}
+
+.highlight-list-home li img {
+    width:288px;
+    height:177px;
+    margin: 10px 0px 0px 12px;
+}
+
+.highlight-list-home li img.icone-video {
+    margin: 158px 0 0 -77px !important;
+    position: absolute;
+}
+
+.highlight-list-home li h3 {
+	margin:0 0 5px;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+    margin: 8px 0px 0px 12px;
+}
+
+.highlight-list-home li p {
+    color: #ADADAD;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: lighter;
+    margin: 5px 0px 0px 12px;
+    text-align: left;
+    width: 282px;
+}
+
+.highlight-list-home li span {
+    color:#CE3132 !important;
+    float:left;
+    margin: 12px 0px 0px 12px;
+    padding-right:15px;
+    text-decoration:none;
+    font-size:14px;
+    background: url(images/ver-mas-decoration.png) no-repeat transparent;
+    background-position: right 3px;
+}
+
+.highlight-list-home li span:hover {
+    text-decoration:underline;
+}
