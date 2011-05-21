@@ -601,9 +601,12 @@ h2.tit-videos{background-position: 20px -67px}
     font-weight: bold;
     margin-top: 10px;
     text-decoration: none;
-	float:left
+	float:left;
+	background: url(images/ver-mas-decoration.png) no-repeat transparent;
+	background-position: 100% 3px;
+	padding-right: 15px;
 }
-/* MULTMIDIA */
+/* \MULTMIDIA */
 
 .highlight-list-item-off-home {
     background-image: url("images/backgound-highlight-off.png");
@@ -650,7 +653,7 @@ h2.tit-videos{background-position: 20px -67px}
 	float:left;
 	margin:0 15px 10px 0
 }
-/* NOTÍCIA */
+/* \NOTÍCIA */
 
 /* NOTÍCIAS */
 div.news {
@@ -726,3 +729,4 @@ div.news {
 .highlight-list-home li span:hover {
     text-decoration:underline;
 }
+/* \NOTÍCIAS */
