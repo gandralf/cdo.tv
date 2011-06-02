@@ -103,7 +103,7 @@ echo $message;
 					<li><a href="quienessomos.html" target='_self'>¿Quienes somos?</a></li>
 				<li><a href="mision.html" target='_self'>Misión</a></li>
 				<!-- <li><a href="equipo.html"target='_self'>Equipo</a></li> -->
-			  <li><a href="contacto.html" target='_self'>Contacto</a></li>
+			  <li><a href="contacto.html" target='_self'>Contacto</a></li><li><a href="http://www.facebook.com/profile.php?id=100002415634246&sk=wall" target='_blank' class="facebook">Facebook</a></li><li><a href="http://twitter.com/#!/canal_CDO" target='_blank' class="twitter">Twitter</a></li>
 			</ul>
 	  </div>
 		<div class="cdo">
