@@ -220,11 +220,12 @@ Calendar = {
 			}
 		},
 		reset: function(){
-			var self = this;
+			var left = -1*new Date().getHours()*this.width,
+				self = this;
 				
 			if(self.flagAnimate){
 				self.flagAnimate = false;
-				this.mask.animate({left:0}, "fast", function(){
+				this.mask.animate({left:left}, "fast", function(){
 					self.flagAnimate = true;
 				});
 			}
