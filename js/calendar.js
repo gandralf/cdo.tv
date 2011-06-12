@@ -198,30 +198,16 @@ Calendar = {
 		
 		},
 		next: function(){
-			var left = this.getLeft() - this.width,
-				self = this;
-				
-			if(self.flagAnimate){
-				self.flagAnimate = false;
-				this.mask.animate({left:left}, "fast", function(){
-					self.flagAnimate = true;
-				});
-			}
+			this.scrollTo(this.getLeft() - this.width);
 		},
 		previous: function(){
-			var left = this.getLeft() + this.width,
-				self = this;
-				
-			if(self.flagAnimate){
-				self.flagAnimate = false;
-				this.mask.animate({left:left}, "fast", function(){
-					self.flagAnimate = true;
-				});
-			}
+			this.scrollTo(this.getLeft() + this.width);
 		},
 		reset: function(){
-			var left = -1*new Date().getHours()*this.width,
-				self = this;
+			this.scrollTo(-1*new Date().getHours()*this.width);
+		},
+		scrollTo: function(left) {
+			var self = this;
 				
 			if(self.flagAnimate){
 				self.flagAnimate = false;
