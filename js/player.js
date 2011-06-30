@@ -1,6 +1,6 @@
 $(function(){
 	var player = new Player($("#playerVideo"));
-	player.init("23347055", true);
+	player.init("25766227", true);
 	
 	$(".videos-destaque a").click(function(){
 		var id = $(this).attr("href").split("#")[1];
