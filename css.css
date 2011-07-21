@@ -665,6 +665,12 @@ h2.tit-videos{background-position: 20px -67px}
 	float:left;
 	margin:0 15px 10px 0
 }
+
+#content-noticia tr.odd {
+    background-color: #3A3A3A;
+}
+
+
 /* \NOTÍCIA */
 
 /* NOTÍCIAS */
@@ -741,4 +747,5 @@ div.news {
 .highlight-list-home li span:hover {
     text-decoration:underline;
 }
+
 /* \NOTÍCIAS */
